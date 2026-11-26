@@ -1,0 +1,29 @@
+<annotation>
+	<folder></folder>
+	<filename>Firefly-kirmizi-balon-bulunan-resim-71684_jpg.rf.a9410ed347c7aa4af3fa8a87ceac2e78.jpg</filename>
+	<path>Firefly-kirmizi-balon-bulunan-resim-71684_jpg.rf.a9410ed347c7aa4af3fa8a87ceac2e78.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>red</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>332</xmin>
+			<xmax>549</xmax>
+			<ymin>38</ymin>
+			<ymax>333</ymax>
+		</bndbox>
+	</object>
+	<metadata>
+	</metadata>
+</annotation>

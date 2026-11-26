@@ -1,0 +1,141 @@
+{
+  "created_on": "2026-11-26",
+  "scope": "new source and documentation files; excludes this manifest, generated logs/plots and bytecode",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 106,
+      "sha256": "6ee90baf51c5d490675895f8740c63b753a9ac7ff9459102ca26f1ad009af447"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3900,
+      "sha256": "4660da966db75451ca85ddf4fe78ad964ae205c5d62e8d84abc150eab622134c"
+    },
+    {
+      "path": "analysis/flight_data.py",
+      "bytes": 3796,
+      "sha256": "7adfa2e1a39ade4390bcd9b85e08200fd9037ae418510fdc062a8e7d9895c4e2"
+    },
+    {
+      "path": "analysis/generate_synthetic_data.py",
+      "bytes": 1464,
+      "sha256": "14ea54b14eae3646099c631c7f5a9e7825f1c226aeb759b8191b05ce73c20195"
+    },
+    {
+      "path": "analysis/plot_flight_data.py",
+      "bytes": 7540,
+      "sha256": "432e82b3b8586dd2ab69b6c870abcb40ed5499f47fee118a4a917c4aa5a6f0ef"
+    },
+    {
+      "path": "companion/monitoring/README.md",
+      "bytes": 3958,
+      "sha256": "44d5f00b15dedefd949542211231a5b0118a9b9784d631c9c2fccc93d006c6a7"
+    },
+    {
+      "path": "companion/monitoring/gazebo_monitor.py",
+      "bytes": 7832,
+      "sha256": "41d138e093a4c584e1d5ae168b812beb4c17c420a229bc63930cec441e0f771a"
+    },
+    {
+      "path": "companion/monitoring/mavlink_monitor.py",
+      "bytes": 5107,
+      "sha256": "50a196a941097ec819231d81a68bed7b702177786568cc3d8e6ea2ea90eb33fd"
+    },
+    {
+      "path": "config/hardware_reference.yaml",
+      "bytes": 1111,
+      "sha256": "b5d722c4f637485ee1a3d769ac77ed67851a887d5b2876ffed90b6da8ae07067"
+    },
+    {
+      "path": "control_research/offline_analysis/README.md",
+      "bytes": 1290,
+      "sha256": "08d3bd555896665745ec20bccfa9e73ef24a7fb0e0602c592c9edd85e4488521"
+    },
+    {
+      "path": "control_research/offline_analysis/check_physics.py",
+      "bytes": 1960,
+      "sha256": "4f9791f10981ed9d35b56713f674d6e1caaab092c5cec2d0492e240ff843af88"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2953,
+      "sha256": "5cb8a7b5116ed65d71ba6763a2ef9a49ced48538ad85c5cf22d05e8967a85ea7"
+    },
+    {
+      "path": "docs/commands_executed.md",
+      "bytes": 6032,
+      "sha256": "c33b183d3fcd1e89a5ba9a2e63d750f6ccf770336b604f4359a51daf01549abe"
+    },
+    {
+      "path": "docs/environment_report.md",
+      "bytes": 7078,
+      "sha256": "35a0fe51e1ca8638bd42cfca9bad437cb07d205d84c2b567fc0aeb1e5c91728c"
+    },
+    {
+      "path": "docs/sitl_compatibility.md",
+      "bytes": 6014,
+      "sha256": "1c03520b9f00704236dc6df23b848228d0511efd4746e3c22c41fe42f3efbe9d"
+    },
+    {
+      "path": "docs/test_plan.md",
+      "bytes": 6250,
+      "sha256": "18e566e749c66bf8f89f4b9f3e9efa2bd368d404a34f4f6db0f7aab14c161952"
+    },
+    {
+      "path": "docs/test_results.md",
+      "bytes": 3432,
+      "sha256": "0517bf3fd485e3a08767d44b11820cede67603079b5132537c4d6fa875d76594"
+    },
+    {
+      "path": "requirements-analysis.txt",
+      "bytes": 119,
+      "sha256": "1e454ef9fff5b9478159a61d5e0a1bc0efff2ead3801c11475eb1e1e2eb67019"
+    },
+    {
+      "path": "scripts/check_environment.sh",
+      "bytes": 1520,
+      "sha256": "e8d349d8727826af51619ba1783992870fe4ba8afbfb1b63dfe019429b1933ea"
+    },
+    {
+      "path": "scripts/launch_world.sh",
+      "bytes": 1092,
+      "sha256": "fcc6e3df0c6116530e8f0a3bab504e39682a5d3635d099c1c12a5aa2d730904b"
+    },
+    {
+      "path": "scripts/prepare_iris_world.py",
+      "bytes": 2434,
+      "sha256": "ef0f21857265d6ee2a6fe8e92ca144f6c6385a38d3f3c4d6665fd36f01a43ffb"
+    },
+    {
+      "path": "scripts/validate_phase1.py",
+      "bytes": 3102,
+      "sha256": "a7496d3d5bab9a688cd2b22ce7dbbd012a11c0af1853ba6d6cec51e271161861"
+    },
+    {
+      "path": "simulation/README.md",
+      "bytes": 1504,
+      "sha256": "6baf8386c7c9c5c30ccf28d70e878ae728b2207604c918c02daad82ac844f70c"
+    },
+    {
+      "path": "simulation/models/README.md",
+      "bytes": 583,
+      "sha256": "79d4ad3a405b0fe1b547ccc636ddbdb288a72232bc064faa88d7b9e1b6b437dc"
+    },
+    {
+      "path": "simulation/worlds/rbi_phase1.sdf",
+      "bytes": 19075,
+      "sha256": "9fdb9bffdcfcb4d31765678c7daf919937d28b87c60f7dacb3babd263d0f1e6a"
+    },
+    {
+      "path": "tests/physics_probe.sdf",
+      "bytes": 20204,
+      "sha256": "80c21662c98efbbbaeb6b16d2adb0e10d73ed6c081371dff5ccd60df67f27683"
+    },
+    {
+      "path": "tests/test_offline.py",
+      "bytes": 6123,
+      "sha256": "6d7d7f7118fe156771491c1114c966e856d3d618b83fd8c5842708c94a958c8d"
+    }
+  ]
+}

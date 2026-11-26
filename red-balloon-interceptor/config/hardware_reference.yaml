@@ -1,0 +1,32 @@
+schema_version: 1
+purpose: Reference BOM only; never used to parameterize the generic simulation.
+manual_flight_status: User reports that the real aircraft can fly manually.
+hardware:
+  frame: HAOYERC 10-inch FPV
+  motors: HAOYERC 3115 900KV
+  propellers: HQProp MacroQuad 10x5
+  flight_controller: SpeedyBee F405 V5
+  firmware: ArduPilot
+  esc: SpeedyBee OX32 55A 4-in-1
+  battery: GNB 6S 5000mAh
+  gps: GEPRC GEP-M1025-MI
+  companion_computer: Raspberry Pi 5 8GB
+  accelerator: Raspberry Pi AI HAT+ 13 TOPS
+  primary_camera: Raspberry Pi Camera Module 3 Standard
+  secondary_camera: HM-LD1-NV UVC/USB
+  transmitter: RadioMaster Boxer
+  receiver: RP4TD ELRS
+measured_parameters:
+  all_up_mass_kg: null
+  center_of_mass_m: null
+  inertia_tensor_kg_m2: null
+  motor_thrust_coefficient: null
+  motor_torque_coefficient: null
+  motor_time_constant_s: null
+  aerodynamic_drag: null
+  flight_performance: null
+simulation:
+  initial_vehicle: Official ArduPilot Gazebo Iris example, when dependencies are available
+  matches_real_aircraft: false
+  custom_aerodynamics_allowed: false
+  hardware_commands_allowed: false

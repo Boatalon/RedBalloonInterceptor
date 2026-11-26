@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+build/
+third_party/
+logs/*
+!logs/.gitkeep
+plots/*
+!plots/.gitkeep

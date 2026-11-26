@@ -1,0 +1,4 @@
+# Optional richer plotting backend. The default SVG backend needs only Python.
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7

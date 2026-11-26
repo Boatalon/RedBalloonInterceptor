@@ -1,0 +1,1668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version="1.9">
+  <world name="rbi_ptic_environment">
+    <gravity>0 0 -9.80665</gravity>
+    <wind>
+      <linear_velocity>0 0 0</linear_velocity>
+    </wind>
+    <physics name="static_campus_1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    <scene>
+      <ambient>0.48 0.5 0.5 1</ambient>
+      <background>0.58 0.75 0.89 1</background>
+      <grid>false</grid>
+      <shadows>true</shadows>
+      <fog>
+        <type>exp</type>
+        <color>0.58 0.75 0.89 1</color>
+        <density>0.00022</density>
+        <start>200</start>
+        <end>2500</end>
+      </fog>
+    </scene>
+    <light name="synthetic_daylight" type="directional">
+      <direction>-0.35 0.25 -0.9</direction>
+      <diffuse>1 0.98 0.92 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <intensity>1</intensity>
+      <cast_shadows>true</cast_shadows>
+    </light>
+    <model name="campus_ground">
+      <static>true</static>
+      <link name="body">
+        <visual name="ground">
+          <pose>0 0 -0.15 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>400 400 0.3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.29 0.4 0.15 1</ambient>
+            <diffuse>0.29 0.4 0.15 1</diffuse>
+            <specular>0.03 0.03 0.03 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.97</roughness>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name="ground_collision">
+          <pose>0 0 -0.15 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>400 400 0.3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="lawn">
+          <pose>0 0 0 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://ptic_materials/meshes/lawn.obj</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.29 0.4 0.15 1</ambient>
+            <diffuse>0.29 0.4 0.15 1</diffuse>
+            <specular>0.03 0.03 0.03 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.97</roughness>
+                <metalness>0</metalness>
+                <albedo_map>model://ptic_materials/textures/grass.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <include>
+      <uri>model://road_surface</uri>
+      <name>road_surface</name>
+      <pose>0 0 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://concrete_path</uri>
+      <name>concrete_path</name>
+      <pose>0 0 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <model name="entrance_paving">
+      <static>true</static>
+      <link name="body">
+        <visual name="research_office_apron">
+          <pose>-72 24 0.045 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>64 16 0.07</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.65 0.66 0.62 1</ambient>
+            <diffuse>0.65 0.66 0.62 1</diffuse>
+            <specular>0.03 0.03 0.03 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.88</roughness>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name="research_laboratory_apron">
+          <pose>68 47 0.045 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>56 16 0.07</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.65 0.66 0.62 1</ambient>
+            <diffuse>0.65 0.66 0.62 1</diffuse>
+            <specular>0.03 0.03 0.03 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.88</roughness>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name="generic_workshop_apron">
+          <pose>75 -119 0.045 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>68 16 0.07</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.65 0.66 0.62 1</ambient>
+            <diffuse>0.65 0.66 0.62 1</diffuse>
+            <specular>0.03 0.03 0.03 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.88</roughness>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name="central_walk">
+          <pose>-8 43 0.045 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>4 157 0.07</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.65 0.66 0.62 1</ambient>
+            <diffuse>0.65 0.66 0.62 1</diffuse>
+            <specular>0.03 0.03 0.03 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.88</roughness>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name="research_office_walk_link">
+          <pose>-40 24 0.045 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>64 3.5 0.07</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.65 0.66 0.62 1</ambient>
+            <diffuse>0.65 0.66 0.62 1</diffuse>
+            <specular>0.03 0.03 0.03 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.88</roughness>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name="research_laboratory_walk_link">
+          <pose>30 47 0.045 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>76 3.5 0.07</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.65 0.66 0.62 1</ambient>
+            <diffuse>0.65 0.66 0.62 1</diffuse>
+            <specular>0.03 0.03 0.03 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.88</roughness>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <include>
+      <uri>model://research_office</uri>
+      <name>research_office</name>
+      <pose>-72 48 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://landscaped_island</uri>
+      <name>research_office_island_-1</name>
+      <pose>-97 21 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>research_office_ornamental_-1</name>
+      <pose>-97 21 0.37 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_furniture</uri>
+      <name>research_office_bench_-1</name>
+      <pose>-97 15 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://landscaped_island</uri>
+      <name>research_office_island_1</name>
+      <pose>-47 21 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>research_office_ornamental_1</name>
+      <pose>-47 21 0.37 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_furniture</uri>
+      <name>research_office_bench_1</name>
+      <pose>-47 15 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://research_laboratory</uri>
+      <name>research_laboratory</name>
+      <pose>68 72 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://landscaped_island</uri>
+      <name>research_laboratory_island_-1</name>
+      <pose>47 44 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>research_laboratory_ornamental_-1</name>
+      <pose>47 44 0.37 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_furniture</uri>
+      <name>research_laboratory_bench_-1</name>
+      <pose>47 38 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://landscaped_island</uri>
+      <name>research_laboratory_island_1</name>
+      <pose>89 44 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>research_laboratory_ornamental_1</name>
+      <pose>89 44 0.37 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_furniture</uri>
+      <name>research_laboratory_bench_1</name>
+      <pose>89 38 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://generic_workshop</uri>
+      <name>generic_workshop</name>
+      <pose>75 -92 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://landscaped_island</uri>
+      <name>generic_workshop_island_-1</name>
+      <pose>48 -122 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>generic_workshop_ornamental_-1</name>
+      <pose>48 -122 0.37 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_furniture</uri>
+      <name>generic_workshop_bench_-1</name>
+      <pose>48 -128 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://landscaped_island</uri>
+      <name>generic_workshop_island_1</name>
+      <pose>102 -122 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>generic_workshop_ornamental_1</name>
+      <pose>102 -122 0.37 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_furniture</uri>
+      <name>generic_workshop_bench_1</name>
+      <pose>102 -128 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_000</name>
+      <pose>25.9588358258 18.0654649137 0 0 0 2.82311235989</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_001</name>
+      <pose>-46.6545656783 117.57907159 0 0 0 -2.29572567075</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_002</name>
+      <pose>-49.6154439422 73.5807263993 0 0 0 0.543203815806</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_003</name>
+      <pose>20.2800189201 167.548708988 0 0 0 1.36944930431</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_004</name>
+      <pose>13.670021666 75.9352147476 0 0 0 0.357798709786</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_005</name>
+      <pose>186.744088316 -93.4378602096 0 0 0 1.2999178351</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_006</name>
+      <pose>-19.5651079732 -52.079238151 0 0 0 0.481815079398</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_007</name>
+      <pose>-66.2525489943 -80.3235757856 0 0 0 -1.21551846216</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_008</name>
+      <pose>187.06743457 71.1490892606 0 0 0 -2.02417715793</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_009</name>
+      <pose>38.3490595333 25.2109184222 0 0 0 0.579557868786</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_010</name>
+      <pose>-26.3970442074 29.8698407383 0 0 0 -1.22238163248</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_011</name>
+      <pose>24.127673878 113.064744025 0 0 0 -1.31245112478</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_012</name>
+      <pose>-2.15485784742 -107.26228967 0 0 0 1.14261274374</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_013</name>
+      <pose>163.097447078 -111.804296448 0 0 0 -2.97795019679</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_014</name>
+      <pose>34.0528601195 185.048538702 0 0 0 -2.17642208549</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_015</name>
+      <pose>-20.4547576386 75.6211504418 0 0 0 -0.989527494191</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_016</name>
+      <pose>120.094062399 -92.3227845009 0 0 0 2.36391963786</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_017</name>
+      <pose>-80.3014866136 181.640366595 0 0 0 -1.35421855838</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_018</name>
+      <pose>87.9348847027 111.142112822 0 0 0 -0.189868299064</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_019</name>
+      <pose>-35.0963915326 -167.890106009 0 0 0 -2.8259951721</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_020</name>
+      <pose>102.059016622 -175.587533208 0 0 0 0.711152445211</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_021</name>
+      <pose>84.3812536783 178.430051932 0 0 0 2.9075855101</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_022</name>
+      <pose>108.604760224 28.6287326076 0 0 0 1.35848735486</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_023</name>
+      <pose>1.36451713302 87.790778532 0 0 0 3.00832199598</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_024</name>
+      <pose>107.866806243 40.335158349 0 0 0 -1.422977587</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_025</name>
+      <pose>43.1812739849 -49.5570900702 0 0 0 -1.08968432523</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_026</name>
+      <pose>-108.873999104 70.5130270675 0 0 0 0.881076368991</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_027</name>
+      <pose>98.2650659943 125.978078185 0 0 0 -2.33528914575</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_028</name>
+      <pose>-165.374107973 -173.481930628 0 0 0 -0.645980926532</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_029</name>
+      <pose>106.747840379 -13.7362394947 0 0 0 1.84891533835</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_030</name>
+      <pose>1.81925081525 -64.0251906048 0 0 0 0.52667933576</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_031</name>
+      <pose>-55.8987703191 111.56864389 0 0 0 2.00399226149</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_032</name>
+      <pose>90.0129490014 -52.1143319768 0 0 0 -0.151888871873</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_033</name>
+      <pose>-104.225263954 -71.5500550608 0 0 0 -1.53869910827</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_034</name>
+      <pose>-165.38906883 178.272444551 0 0 0 0.940393827887</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_035</name>
+      <pose>-18.3843010716 -182.495472104 0 0 0 -0.884233499782</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_036</name>
+      <pose>-81.7061382495 119.321614078 0 0 0 -0.609348228312</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_037</name>
+      <pose>163.742680315 185.655934265 0 0 0 -1.10366964946</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_038</name>
+      <pose>23.7240146743 124.663927371 0 0 0 0.00787246256081</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_039</name>
+      <pose>-27.8619798672 48.6913028309 0 0 0 1.56911653825</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_040</name>
+      <pose>-60.4460642191 88.7423243242 0 0 0 -0.15881518998</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_041</name>
+      <pose>180.021398088 103.270740651 0 0 0 0.240481527296</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_042</name>
+      <pose>-112.802632232 -57.933149644 0 0 0 2.17115867207</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_043</name>
+      <pose>31.77435075 -75.7538096918 0 0 0 1.68706809014</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_044</name>
+      <pose>-40.2647097591 -78.0646665785 0 0 0 -0.0521157350062</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_045</name>
+      <pose>-51.8932844088 -70.9025112761 0 0 0 -1.33538504572</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_046</name>
+      <pose>-25.9562729192 101.759515086 0 0 0 0.37670072716</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_047</name>
+      <pose>-61.2472202191 179.683671299 0 0 0 -0.803096047413</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_048</name>
+      <pose>163.455426552 107.301513411 0 0 0 -2.98267677827</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_049</name>
+      <pose>101.135576239 11.2373198783 0 0 0 -2.60617367569</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_050</name>
+      <pose>-57.3359370631 -169.365696073 0 0 0 3.09685689059</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_051</name>
+      <pose>-112.976538952 -187.95394464 0 0 0 2.21624853648</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>tropical_tree_instance_052</name>
+      <pose>-92.1540943564 183.414363385 0 0 0 -2.65468616387</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>tropical_tree_instance_053</name>
+      <pose>0.223539008618 101.05885463 0 0 0 0.443512390732</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>tropical_tree_instance_054</name>
+      <pose>-118.134347226 89.8942675938 0 0 0 1.79258763987</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>tropical_tree_instance_055</name>
+      <pose>-181.801572101 -107.120746359 0 0 0 -2.33775662725</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>tropical_tree_instance_056</name>
+      <pose>-33.1546596476 91.793067624 0 0 0 -2.09377124248</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>tropical_tree_instance_057</name>
+      <pose>-47.4974861706 -53.4381882096 0 0 0 -1.02713915976</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>ornamental_tree_instance_000</name>
+      <pose>42.3510216126 -163.478336106 0 0 0 2.25231639111</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_01</uri>
+      <name>ornamental_tree_instance_001</name>
+      <pose>28.7199676682 -99.6100584783 0 0 0 -2.32586968206</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_02</uri>
+      <name>ornamental_tree_instance_002</name>
+      <pose>-176.66116841 5.20279412098 0 0 0 -1.71598592684</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_03</uri>
+      <name>ornamental_tree_instance_003</name>
+      <pose>-70.558138468 97.5930922386 0 0 0 2.06442725074</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_04</uri>
+      <name>ornamental_tree_instance_004</name>
+      <pose>52.9113428054 166.133790332 0 0 0 -2.54292668767</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_05</uri>
+      <name>ornamental_tree_instance_005</name>
+      <pose>-109.414386751 82.3205353372 0 0 0 3.07505990947</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>ornamental_tree_instance_006</name>
+      <pose>-113.30344353 109.424196201 0 0 0 -0.345823804556</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_01</uri>
+      <name>ornamental_tree_instance_007</name>
+      <pose>57.2256619633 178.715339833 0 0 0 0.594066113414</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_02</uri>
+      <name>ornamental_tree_instance_008</name>
+      <pose>-0.868075817196 1.87738639622 0 0 0 -1.41575047536</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_03</uri>
+      <name>ornamental_tree_instance_009</name>
+      <pose>24.1595260589 -171.856774673 0 0 0 2.9963251833</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_04</uri>
+      <name>ornamental_tree_instance_010</name>
+      <pose>63.9535622846 2.02733542023 0 0 0 0.514327382151</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_05</uri>
+      <name>ornamental_tree_instance_011</name>
+      <pose>-90.6173110857 -98.7638048256 0 0 0 1.78134162199</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>ornamental_tree_instance_012</name>
+      <pose>-71.3745880492 79.2826143597 0 0 0 2.10641653911</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_01</uri>
+      <name>ornamental_tree_instance_013</name>
+      <pose>-19.9063907214 62.0368170735 0 0 0 1.30600192429</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_02</uri>
+      <name>ornamental_tree_instance_014</name>
+      <pose>-60.5168094323 -64.9894288546 0 0 0 -0.929943803478</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_03</uri>
+      <name>ornamental_tree_instance_015</name>
+      <pose>-66.2970123663 -127.039558249 0 0 0 -0.574110699309</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_04</uri>
+      <name>ornamental_tree_instance_016</name>
+      <pose>2.88553457893 -98.1615216034 0 0 0 -2.7372162355</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_05</uri>
+      <name>ornamental_tree_instance_017</name>
+      <pose>112.859975529 4.05532834238 0 0 0 -1.47104908483</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>ornamental_tree_instance_018</name>
+      <pose>-181.375011903 86.4599915429 0 0 0 -0.334538773578</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_01</uri>
+      <name>ornamental_tree_instance_019</name>
+      <pose>75.9131163984 -56.9743329582 0 0 0 -0.382203281849</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_02</uri>
+      <name>ornamental_tree_instance_020</name>
+      <pose>60.6338727968 -3.21799620149 0 0 0 1.49511515343</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_03</uri>
+      <name>ornamental_tree_instance_021</name>
+      <pose>-47.896823304 -5.17984210605 0 0 0 -1.57551580668</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_04</uri>
+      <name>ornamental_tree_instance_022</name>
+      <pose>-72.3433183551 3.83010152703 0 0 0 -0.0645201946581</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_05</uri>
+      <name>ornamental_tree_instance_023</name>
+      <pose>-120.006637201 40.6649353374 0 0 0 1.63805269807</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree</uri>
+      <name>ornamental_tree_instance_024</name>
+      <pose>118.327333739 89.4529604344 0 0 0 -1.52997871343</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_01</uri>
+      <name>ornamental_tree_instance_025</name>
+      <pose>-39.5326568367 -54.5770647434 0 0 0 2.93670107597</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_02</uri>
+      <name>ornamental_tree_instance_026</name>
+      <pose>-117.778781945 -176.187296388 0 0 0 -3.10434520845</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ornamental_tree_03</uri>
+      <name>ornamental_tree_instance_027</name>
+      <pose>-85.2709566111 76.7325755986 0 0 0 0.178880634256</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_000</name>
+      <pose>-129.326073536 -74.1464879188 0 0 0 3.09992447455</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_001</name>
+      <pose>-44.8961453688 127.930603114 0 0 0 -1.09192138697</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_002</name>
+      <pose>-0.0582419928404 45.8299564891 0 0 0 0.91342935873</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_003</name>
+      <pose>80.5316043197 -63.1424017688 0 0 0 1.96812096591</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_004</name>
+      <pose>-179.311408904 -92.9895138433 0 0 0 1.19511798517</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_005</name>
+      <pose>-61.3816469634 72.2907237008 0 0 0 1.3919101599</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_006</name>
+      <pose>76.7329796497 5.2650310422 0 0 0 0.736314915047</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_007</name>
+      <pose>-60.8954465112 -183.991633646 0 0 0 -1.79963605215</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_008</name>
+      <pose>-176.981389661 94.7654101823 0 0 0 1.38910690432</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_009</name>
+      <pose>-166.26793807 57.7749287116 0 0 0 2.09019145248</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_010</name>
+      <pose>-81.9875939622 67.9243740148 0 0 0 -0.250188031275</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_011</name>
+      <pose>24.6954831046 -93.1425544938 0 0 0 -1.01888316078</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_012</name>
+      <pose>4.78527119118 -128.77794469 0 0 0 2.09850886266</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_013</name>
+      <pose>163.520560675 42.4744606033 0 0 0 0.0692599941917</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_014</name>
+      <pose>2.02123722182 -102.334974603 0 0 0 2.882916044</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_015</name>
+      <pose>186.76528145 184.620535525 0 0 0 2.88774552145</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_016</name>
+      <pose>-2.72278706258 44.6740405505 0 0 0 -2.17245486747</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_017</name>
+      <pose>14.4641786184 -64.7693011217 0 0 0 -2.50011631805</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_018</name>
+      <pose>-24.9416212762 56.4572848644 0 0 0 1.95383273232</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_019</name>
+      <pose>-39.3282816606 -8.76263722157 0 0 0 -1.1145559133</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_020</name>
+      <pose>21.320417778 -91.6024672297 0 0 0 0.159128342177</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_021</name>
+      <pose>-18.8828017634 23.0584826195 0 0 0 2.2119263441</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_022</name>
+      <pose>125.193188868 88.4029677301 0 0 0 1.04562985268</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_023</name>
+      <pose>-160.734141784 -71.5650439212 0 0 0 -2.44851747484</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_024</name>
+      <pose>-35.0769290919 -43.7987128033 0 0 0 -0.0761899787085</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_025</name>
+      <pose>-99.187303738 -119.358032954 0 0 0 1.07056200143</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_026</name>
+      <pose>91.427650034 105.443311821 0 0 0 1.45516401523</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_027</name>
+      <pose>36.5160555761 -107.258408836 0 0 0 -1.18385154133</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_028</name>
+      <pose>168.599403222 89.7956642247 0 0 0 0.7759319149</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_029</name>
+      <pose>68.2514394096 21.0784787085 0 0 0 2.80284811887</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_030</name>
+      <pose>-172.307410218 179.16023944 0 0 0 -0.287684155927</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_031</name>
+      <pose>-66.8710154849 -115.534083185 0 0 0 2.33889310819</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_032</name>
+      <pose>-89.0016201247 10.0415440794 0 0 0 -0.629813105299</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_033</name>
+      <pose>28.8570597893 90.0018067832 0 0 0 0.995282478822</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_034</name>
+      <pose>-173.140922519 -90.2894489633 0 0 0 -2.71438706851</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_035</name>
+      <pose>72.0657626591 -161.20855676 0 0 0 -2.44776635315</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_036</name>
+      <pose>-53.4041633912 -64.5224759929 0 0 0 1.58379207552</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_037</name>
+      <pose>-101.665591465 -165.219094424 0 0 0 1.11003043854</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_038</name>
+      <pose>106.30311814 55.487781858 0 0 0 -2.21755147561</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_039</name>
+      <pose>-125.547844704 52.7161362603 0 0 0 0.654811330348</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_040</name>
+      <pose>-8.45469488711 161.407476385 0 0 0 -3.07587392626</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_041</name>
+      <pose>-121.181396907 100.616579207 0 0 0 -1.48609785151</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_042</name>
+      <pose>64.689544307 -46.6460297637 0 0 0 -2.04630805888</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_043</name>
+      <pose>-22.547013176 94.7858303584 0 0 0 0.247318041239</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_044</name>
+      <pose>-67.7327983212 110.596906955 0 0 0 -2.74960395761</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_045</name>
+      <pose>48.1632877532 91.4414783598 0 0 0 -2.06179025517</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_046</name>
+      <pose>17.8721378306 -173.671009731 0 0 0 -2.05205795054</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_047</name>
+      <pose>0.839241222929 49.190685629 0 0 0 -1.86661493642</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_048</name>
+      <pose>116.497801524 -178.283485288 0 0 0 0.831948132793</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_049</name>
+      <pose>111.548225548 109.152111558 0 0 0 -2.211484422</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_050</name>
+      <pose>-78.0351157856 -107.549890914 0 0 0 0.0762882804767</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_051</name>
+      <pose>6.20267412717 23.2640656779 0 0 0 2.23752911419</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_052</name>
+      <pose>110.568126244 -172.616310904 0 0 0 2.51575852077</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_053</name>
+      <pose>95.029180972 -161.892940437 0 0 0 -2.29768078263</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation</uri>
+      <name>vegetation_instance_054</name>
+      <pose>-172.288970529 -163.113603105 0 0 0 0.144369256871</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_01</uri>
+      <name>vegetation_instance_055</name>
+      <pose>110.746135028 53.0198152278 0 0 0 -1.16082042121</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_02</uri>
+      <name>vegetation_instance_056</name>
+      <pose>-23.6902553056 -45.6304252654 0 0 0 2.93229930249</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_03</uri>
+      <name>vegetation_instance_057</name>
+      <pose>44.797137542 113.571621321 0 0 0 -1.4213232796</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_04</uri>
+      <name>vegetation_instance_058</name>
+      <pose>-88.5319735982 74.3084579775 0 0 0 -0.522860866968</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://vegetation_05</uri>
+      <name>vegetation_instance_059</name>
+      <pose>-69.9321739628 -94.9097098786 0 0 0 1.2453998652</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_0</name>
+      <pose>-157 -115 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_1</name>
+      <pose>-157 -94 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_2</name>
+      <pose>-157 -73 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_3</name>
+      <pose>-157 -52 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_4</name>
+      <pose>-157 -31 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_5</name>
+      <pose>-157 -10 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_6</name>
+      <pose>-157 11 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_7</name>
+      <pose>-157 32 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_8</name>
+      <pose>-157 53 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_9</name>
+      <pose>-157 74 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_10</name>
+      <pose>-157 95 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://campus_light</uri>
+      <name>path_light_11</name>
+      <pose>-157 116 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://ptic_backdrop</uri>
+      <name>distant_landscape</name>
+      <pose>0 0 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_000</name>
+      <pose>239.368721262 0 0.701949128924 0 0 0</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_001</name>
+      <pose>230.729030155 24.2505982681 0.161840657954 0 0 0.10471975512</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_002</name>
+      <pose>225.38336625 47.9067133877 -0.0489249826381 0 0 0.209439510239</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_003</name>
+      <pose>237.247910792 77.0865191064 0.241784562093 0 0 0.314159265359</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_004</name>
+      <pose>210.195910307 93.5852488031 -0.06 0 0 0.418879020479</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_005</name>
+      <pose>215.75438964 124.565854938 -0.06 0 0 0.523598775598</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_006</name>
+      <pose>235.085015491 170.799261451 0.420006443454 0 0 0.628318530718</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_007</name>
+      <pose>215.065970214 193.646269372 -0.06 0 0 0.733038285838</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_008</name>
+      <pose>202.025246088 224.371766616 -0.06 0 0 0.837758040957</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_009</name>
+      <pose>182.006592937 250.510583924 1.22099016804 0 0 0.942477796077</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_010</name>
+      <pose>147.946829042 256.25142472 0.925410615353 0 0 1.0471975512</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_011</name>
+      <pose>93.0992263067 209.104285907 -0.06 0 0 1.15191730632</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_012</name>
+      <pose>70.5513852698 217.13483697 -0.06 0 0 1.25663706144</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_013</name>
+      <pose>45.8644688679 215.775361191 -0.06 0 0 1.36135681656</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_014</name>
+      <pose>26.0762175264 248.098637133 2.54267807644 0 0 1.46607657168</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_015</name>
+      <pose>6.43973683841e-14 227.330072382 0.16092607146 0 0 1.57079632679</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_016</name>
+      <pose>-25.288275939 240.601873702 2.04760663016 0 0 1.67551608191</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_017</name>
+      <pose>-48.6419831866 228.842538684 0.39891121908 0 0 1.78023583703</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_018</name>
+      <pose>-70.1119132569 215.782281191 -0.06 0 0 1.88495559215</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_019</name>
+      <pose>-93.4028951298 209.786337251 -0.06 0 0 1.98967534727</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_020</name>
+      <pose>-150.572530205 260.79927254 8.92705986265 0 0 2.09439510239</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_021</name>
+      <pose>-172.054969533 236.813349392 2.53379522702 0 0 2.19911485751</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_022</name>
+      <pose>-192.712008514 214.028368414 -0.06 0 0 2.30383461263</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_023</name>
+      <pose>-238.455687646 214.706465543 2.77816746938 0 0 2.40855436775</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_024</name>
+      <pose>-260.140722415 189.003298101 5.49404753813 0 0 2.51327412287</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_025</name>
+      <pose>-210.701104006 121.648339117 -0.06 0 0 2.61799387799</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_026</name>
+      <pose>-208.101606165 92.6528045235 -0.06 0 0 2.72271363311</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_027</name>
+      <pose>-235.372222573 76.4770710601 0.225525129739 0 0 2.82743338823</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_028</name>
+      <pose>-226.562718912 48.1573925345 -0.0348833080224 0 0 2.93215314335</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_029</name>
+      <pose>-246.753614723 25.9348499745 0.174571009134 0 0 3.03687289847</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_030</name>
+      <pose>-227.813716857 1.29068747427e-13 -0.0237913660986 0 0 3.14159265359</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_031</name>
+      <pose>-221.493224746 -23.2798760035 -0.06 0 0 3.24631240871</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_032</name>
+      <pose>-235.828299965 -50.1268525849 0.26499579461 0 0 3.35103216383</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_033</name>
+      <pose>-212.382575951 -69.0072820631 -0.06 0 0 3.45575191895</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_034</name>
+      <pose>-219.226291187 -97.6058334102 -0.06 0 0 3.56047167407</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_035</name>
+      <pose>-248.669715523 -143.569527196 2.54434600625 0 0 3.66519142919</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_036</name>
+      <pose>-239.120076091 -173.73090458 2.11930436045 0 0 3.76991118431</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_037</name>
+      <pose>-231.687659403 -208.61250554 1.39607144133 0 0 3.87463093943</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_038</name>
+      <pose>-216.264932792 -240.186540877 4.20928893512 0 0 3.97935069455</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_039</name>
+      <pose>-189.499864566 -260.82418752 11.1006532138 0 0 4.08407044967</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_040</name>
+      <pose>-143.64990151 -248.808927917 5.71814323939 0 0 4.18879020479</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_041</name>
+      <pose>-97.9774892543 -220.06104388 -0.06 0 0 4.29350995991</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_042</name>
+      <pose>-72.3013862479 -222.52078617 -0.06 0 0 4.39822971503</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_043</name>
+      <pose>-49.7623381288 -234.113394279 1.02510574987 0 0 4.50294947015</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_044</name>
+      <pose>-24.8133875028 -236.083612045 1.01824892033 0 0 4.60766922527</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_045</name>
+      <pose>-4.2474081777e-14 -231.218131936 0.396051065423 0 0 4.71238898038</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_046</name>
+      <pose>26.0996513556 -248.321595125 1.42083538832 0 0 4.8171087355</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_047</name>
+      <pose>51.7498514855 -243.46390946 0.773109606903 0 0 4.92182849062</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_048</name>
+      <pose>72.3914733126 -222.798045646 -0.06 0 0 5.02654824574</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_049</name>
+      <pose>94.4687845305 -212.180364042 -0.06 0 0 5.13126800086</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_050</name>
+      <pose>149.995913456 -259.800543033 6.39454635039 0 0 5.23598775598</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_051</name>
+      <pose>176.222945511 -242.550076173 4.42676755069 0 0 5.3407075111</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_052</name>
+      <pose>193.109304353 -214.469610145 -0.06 0 0 5.44542726622</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_053</name>
+      <pose>231.447026441 -208.395838648 2.53469071646 0 0 5.55014702134</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree</uri>
+      <name>forest_054</name>
+      <pose>249.309661529 -181.134071743 9.15246571056 0 0 5.65486677646</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_01</uri>
+      <name>forest_055</name>
+      <pose>215.012811728 -124.13770473 -0.06 0 0 5.75958653158</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_02</uri>
+      <name>forest_056</name>
+      <pose>224.454812636 -99.9337211411 -0.06 0 0 5.8643062867</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_03</uri>
+      <name>forest_057</name>
+      <pose>227.476451854 -73.9115796365 0.125558953041 0 0 5.96902604182</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_04</uri>
+      <name>forest_058</name>
+      <pose>226.238657216 -48.0885110947 0.0181735267462 0 0 6.07374579694</pose>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://tropical_tree_05</uri>
+      <name>forest_059</name>
+      <pose>235.197183132 -24.7202200698 0.558531554793 0 0 6.17846555206</pose>
+      <static>true</static>
+    </include>
+  </world>
+</sdf>

@@ -1,0 +1,5016 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version="1.9">
+  <model name="research_laboratory">
+    <static>true</static>
+    <link name="body">
+      <visual name="structure">
+        <pose>0 0 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>52 34 25</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.86 0.87 0.84 1</ambient>
+          <diffuse>0.86 0.87 0.84 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.88</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <collision name="structure_collision">
+        <pose>0 0 12.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>52 34 25</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="roof_edge">
+        <pose>0 0 24.775 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>52.5 34.5 0.45</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.86 0.87 0.84 1</ambient>
+          <diffuse>0.86 0.87 0.84 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.88</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="roof_surface">
+        <pose>0 0 24.81 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>51 33 0.12</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="plinth">
+        <pose>0 0 0.325 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>52.2 34.2 0.65</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_0_1">
+        <pose>-24 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_0_1">
+        <pose>-24 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_0_2">
+        <pose>-24 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_0_2">
+        <pose>-24 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_0_3">
+        <pose>-24 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_0_3">
+        <pose>-24 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_0_4">
+        <pose>-24 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_0_4">
+        <pose>-24 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_0">
+        <pose>-24 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_1_1">
+        <pose>-20 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_1_1">
+        <pose>-20 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_1_2">
+        <pose>-20 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_1_2">
+        <pose>-20 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_1_3">
+        <pose>-20 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_1_3">
+        <pose>-20 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_1_4">
+        <pose>-20 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_1_4">
+        <pose>-20 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_1">
+        <pose>-20 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_2_1">
+        <pose>-16 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_2_1">
+        <pose>-16 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_2_2">
+        <pose>-16 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_2_2">
+        <pose>-16 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_2_3">
+        <pose>-16 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_2_3">
+        <pose>-16 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_2_4">
+        <pose>-16 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_2_4">
+        <pose>-16 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_2">
+        <pose>-16 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_3_1">
+        <pose>-12 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_3_1">
+        <pose>-12 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_3_2">
+        <pose>-12 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_3_2">
+        <pose>-12 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_3_3">
+        <pose>-12 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_3_3">
+        <pose>-12 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_3_4">
+        <pose>-12 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_3_4">
+        <pose>-12 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_3">
+        <pose>-12 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_4_1">
+        <pose>-8 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_4_1">
+        <pose>-8 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_4_2">
+        <pose>-8 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_4_2">
+        <pose>-8 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_4_3">
+        <pose>-8 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_4_3">
+        <pose>-8 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_4_4">
+        <pose>-8 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_4_4">
+        <pose>-8 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_4">
+        <pose>-8 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_5_1">
+        <pose>-4 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_5_1">
+        <pose>-4 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_5_2">
+        <pose>-4 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_5_2">
+        <pose>-4 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_5_3">
+        <pose>-4 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_5_3">
+        <pose>-4 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_5_4">
+        <pose>-4 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_5_4">
+        <pose>-4 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_5">
+        <pose>-4 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_6_1">
+        <pose>0 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_6_1">
+        <pose>0 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_6_2">
+        <pose>0 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_6_2">
+        <pose>0 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_6_3">
+        <pose>0 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_6_3">
+        <pose>0 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_6_4">
+        <pose>0 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_6_4">
+        <pose>0 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_6">
+        <pose>0 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_7_1">
+        <pose>4 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_7_1">
+        <pose>4 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_7_2">
+        <pose>4 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_7_2">
+        <pose>4 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_7_3">
+        <pose>4 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_7_3">
+        <pose>4 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_7_4">
+        <pose>4 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_7_4">
+        <pose>4 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_7">
+        <pose>4 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_8_1">
+        <pose>8 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_8_1">
+        <pose>8 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_8_2">
+        <pose>8 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_8_2">
+        <pose>8 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_8_3">
+        <pose>8 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_8_3">
+        <pose>8 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_8_4">
+        <pose>8 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_8_4">
+        <pose>8 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_8">
+        <pose>8 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_9_1">
+        <pose>12 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_9_1">
+        <pose>12 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_9_2">
+        <pose>12 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_9_2">
+        <pose>12 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_9_3">
+        <pose>12 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_9_3">
+        <pose>12 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_9_4">
+        <pose>12 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_9_4">
+        <pose>12 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_9">
+        <pose>12 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_10_1">
+        <pose>16 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_10_1">
+        <pose>16 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_10_2">
+        <pose>16 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_10_2">
+        <pose>16 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_10_3">
+        <pose>16 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_10_3">
+        <pose>16 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_10_4">
+        <pose>16 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_10_4">
+        <pose>16 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_10">
+        <pose>16 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_11_1">
+        <pose>20 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_11_1">
+        <pose>20 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_11_2">
+        <pose>20 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_11_2">
+        <pose>20 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_11_3">
+        <pose>20 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_11_3">
+        <pose>20 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_11_4">
+        <pose>20 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_11_4">
+        <pose>20 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_11">
+        <pose>20 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_12_1">
+        <pose>24 -17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_12_1">
+        <pose>24 -17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_12_2">
+        <pose>24 -17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_12_2">
+        <pose>24 -17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_12_3">
+        <pose>24 -17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_12_3">
+        <pose>24 -17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_-1_12_4">
+        <pose>24 -17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_-1_12_4">
+        <pose>24 -17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_-1_12">
+        <pose>24 -17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_0_1">
+        <pose>-24 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_0_1">
+        <pose>-24 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_0_2">
+        <pose>-24 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_0_2">
+        <pose>-24 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_0_3">
+        <pose>-24 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_0_3">
+        <pose>-24 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_0_4">
+        <pose>-24 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_0_4">
+        <pose>-24 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_0">
+        <pose>-24 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_1_1">
+        <pose>-20 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_1_1">
+        <pose>-20 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_1_2">
+        <pose>-20 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_1_2">
+        <pose>-20 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_1_3">
+        <pose>-20 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_1_3">
+        <pose>-20 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_1_4">
+        <pose>-20 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_1_4">
+        <pose>-20 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_1">
+        <pose>-20 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_2_1">
+        <pose>-16 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_2_1">
+        <pose>-16 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_2_2">
+        <pose>-16 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_2_2">
+        <pose>-16 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_2_3">
+        <pose>-16 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_2_3">
+        <pose>-16 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_2_4">
+        <pose>-16 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_2_4">
+        <pose>-16 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_2">
+        <pose>-16 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_3_1">
+        <pose>-12 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_3_1">
+        <pose>-12 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_3_2">
+        <pose>-12 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_3_2">
+        <pose>-12 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_3_3">
+        <pose>-12 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_3_3">
+        <pose>-12 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_3_4">
+        <pose>-12 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_3_4">
+        <pose>-12 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_3">
+        <pose>-12 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_4_1">
+        <pose>-8 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_4_1">
+        <pose>-8 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_4_2">
+        <pose>-8 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_4_2">
+        <pose>-8 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_4_3">
+        <pose>-8 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_4_3">
+        <pose>-8 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_4_4">
+        <pose>-8 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_4_4">
+        <pose>-8 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_4">
+        <pose>-8 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_5_1">
+        <pose>-4 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_5_1">
+        <pose>-4 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_5_2">
+        <pose>-4 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_5_2">
+        <pose>-4 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_5_3">
+        <pose>-4 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_5_3">
+        <pose>-4 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_5_4">
+        <pose>-4 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_5_4">
+        <pose>-4 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_5">
+        <pose>-4 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_6_1">
+        <pose>0 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_6_1">
+        <pose>0 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_6_2">
+        <pose>0 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_6_2">
+        <pose>0 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_6_3">
+        <pose>0 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_6_3">
+        <pose>0 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_6_4">
+        <pose>0 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_6_4">
+        <pose>0 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_6">
+        <pose>0 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_7_1">
+        <pose>4 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_7_1">
+        <pose>4 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_7_2">
+        <pose>4 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_7_2">
+        <pose>4 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_7_3">
+        <pose>4 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_7_3">
+        <pose>4 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_7_4">
+        <pose>4 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_7_4">
+        <pose>4 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_7">
+        <pose>4 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_8_1">
+        <pose>8 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_8_1">
+        <pose>8 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_8_2">
+        <pose>8 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_8_2">
+        <pose>8 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_8_3">
+        <pose>8 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_8_3">
+        <pose>8 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_8_4">
+        <pose>8 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_8_4">
+        <pose>8 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_8">
+        <pose>8 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_9_1">
+        <pose>12 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_9_1">
+        <pose>12 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_9_2">
+        <pose>12 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_9_2">
+        <pose>12 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_9_3">
+        <pose>12 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_9_3">
+        <pose>12 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_9_4">
+        <pose>12 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_9_4">
+        <pose>12 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_9">
+        <pose>12 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_10_1">
+        <pose>16 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_10_1">
+        <pose>16 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_10_2">
+        <pose>16 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_10_2">
+        <pose>16 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_10_3">
+        <pose>16 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_10_3">
+        <pose>16 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_10_4">
+        <pose>16 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_10_4">
+        <pose>16 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_10">
+        <pose>16 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_11_1">
+        <pose>20 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_11_1">
+        <pose>20 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_11_2">
+        <pose>20 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_11_2">
+        <pose>20 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_11_3">
+        <pose>20 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_11_3">
+        <pose>20 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_11_4">
+        <pose>20 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_11_4">
+        <pose>20 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_11">
+        <pose>20 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_12_1">
+        <pose>24 17.1 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_12_1">
+        <pose>24 17.23 5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_12_2">
+        <pose>24 17.1 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_12_2">
+        <pose>24 17.23 10 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_12_3">
+        <pose>24 17.1 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_12_3">
+        <pose>24 17.23 15 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_reveal_1_12_4">
+        <pose>24 17.1 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.68 0.22 3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="window_1_12_4">
+        <pose>24 17.23 20 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>1.4 0.1 2.7</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.36 0.42 1</ambient>
+          <diffuse>0.23 0.36 0.42 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="panel_seam_1_12">
+        <pose>24 17.05 12.5 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.07 0.08 24.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="accent_band">
+        <pose>0 -17.18 23 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>52 0.22 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_frame">
+        <pose>0 -20.1 4.6 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>20.8 6 0.28</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_glass">
+        <pose>0 -20.1 4.8 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>20.5 5.7 0.12</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.299 0.468 0.546 1</ambient>
+          <diffuse>0.299 0.468 0.546 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_column_-10.05">
+        <pose>-10.05 -22.7 2.225 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.22 0.22 4.45</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_column_10.05">
+        <pose>10.05 -22.7 2.225 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.22 0.22 4.45</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_rafter_0">
+        <pose>-10.4 -20.1 4.92 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.16 6 0.17</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.65 0.7 0.72 1</ambient>
+          <diffuse>0.65 0.7 0.72 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.4</roughness>
+              <metalness>0.3</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_rafter_1">
+        <pose>-5.2 -20.1 4.92 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.16 6 0.17</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.65 0.7 0.72 1</ambient>
+          <diffuse>0.65 0.7 0.72 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.4</roughness>
+              <metalness>0.3</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_rafter_2">
+        <pose>0 -20.1 4.92 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.16 6 0.17</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.65 0.7 0.72 1</ambient>
+          <diffuse>0.65 0.7 0.72 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.4</roughness>
+              <metalness>0.3</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_rafter_3">
+        <pose>5.2 -20.1 4.92 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.16 6 0.17</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.65 0.7 0.72 1</ambient>
+          <diffuse>0.65 0.7 0.72 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.4</roughness>
+              <metalness>0.3</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="canopy_rafter_4">
+        <pose>10.4 -20.1 4.92 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.16 6 0.17</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.65 0.7 0.72 1</ambient>
+          <diffuse>0.65 0.7 0.72 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.4</roughness>
+              <metalness>0.3</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="entry_glass">
+        <pose>0 -17.22 1.7 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>6 0.16 3.4</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1495 0.234 0.273 1</ambient>
+          <diffuse>0.1495 0.234 0.273 1</diffuse>
+          <specular>0.12 0.12 0.12 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.24</roughness>
+              <metalness>0.18</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="entry_divider">
+        <pose>0 -17.28 1.7 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.12 0.24 3.4</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.65 0.7 0.72 1</ambient>
+          <diffuse>0.65 0.7 0.72 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.4</roughness>
+              <metalness>0.3</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

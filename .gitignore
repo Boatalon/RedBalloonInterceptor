@@ -1,0 +1,37 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# OS-generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+
+# Office / Temporary lock files
+~$*
+*.tmp
+*.temp
+
+# Build directories & C++ binaries
+build/
+bin/
+*.o
+*.a
+*.out
+pi4_balloon_interceptor_bin
+
+# Logs
+*.log

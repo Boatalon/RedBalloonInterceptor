@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "world_name": "rbi_ptic_environment",
+  "profile": "MEDIUM",
+  "lighting": "midday",
+  "seed": 271827,
+  "fictional_non_georeferenced": true,
+  "field_m": [
+    400,
+    400
+  ],
+  "building_dimensions_m": {
+    "research_office": [
+      60,
+      32,
+      20
+    ],
+    "research_laboratory": [
+      52,
+      34,
+      25
+    ],
+    "generic_workshop": [
+      64,
+      38,
+      30
+    ]
+  },
+  "reusable_models": [
+    {
+      "name": "ptic_materials",
+      "visuals": 1,
+      "collisions": 0
+    },
+    {
+      "name": "research_office",
+      "visuals": 58,
+      "collisions": 1
+    },
+    {
+      "name": "research_laboratory",
+      "visuals": 250,
+      "collisions": 1
+    },
+    {
+      "name": "generic_workshop",
+      "visuals": 94,
+      "collisions": 1
+    },
+    {
+      "name": "tropical_tree",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "tropical_tree_01",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "tropical_tree_02",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "tropical_tree_03",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "tropical_tree_04",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "tropical_tree_05",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "ornamental_tree",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "ornamental_tree_01",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "ornamental_tree_02",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "ornamental_tree_03",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "ornamental_tree_04",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "ornamental_tree_05",
+      "visuals": 8,
+      "collisions": 0
+    },
+    {
+      "name": "vegetation",
+      "visuals": 2,
+      "collisions": 0
+    },
+    {
+      "name": "vegetation_01",
+      "visuals": 2,
+      "collisions": 0
+    },
+    {
+      "name": "vegetation_02",
+      "visuals": 2,
+      "collisions": 0
+    },
+    {
+      "name": "vegetation_03",
+      "visuals": 2,
+      "collisions": 0
+    },
+    {
+      "name": "vegetation_04",
+      "visuals": 2,
+      "collisions": 0
+    },
+    {
+      "name": "vegetation_05",
+      "visuals": 2,
+      "collisions": 0
+    },
+    {
+      "name": "road_surface",
+      "visuals": 137,
+      "collisions": 0
+    },
+    {
+      "name": "concrete_path",
+      "visuals": 3,
+      "collisions": 0
+    },
+    {
+      "name": "grass_surface",
+      "visuals": 1,
+      "collisions": 0
+    },
+    {
+      "name": "landscaped_island",
+      "visuals": 2,
+      "collisions": 0
+    },
+    {
+      "name": "concrete_curb",
+      "visuals": 1,
+      "collisions": 0
+    },
+    {
+      "name": "campus_furniture",
+      "visuals": 4,
+      "collisions": 0
+    },
+    {
+      "name": "campus_light",
+      "visuals": 3,
+      "collisions": 0
+    },
+    {
+      "name": "ptic_backdrop",
+      "visuals": 2,
+      "collisions": 0
+    }
+  ],
+  "world_includes": 242,
+  "world_inline_visuals": 8,
+  "world_inline_collisions": 1,
+  "placed_vegetation": 146,
+  "materials_used": [
+    "aluminum",
+    "asphalt",
+    "bark",
+    "foliage",
+    "foliage_light",
+    "glass",
+    "grass",
+    "hill_green",
+    "light_gray_concrete",
+    "painted_steel",
+    "pavement",
+    "road_paint",
+    "white_concrete"
+  ],
+  "mesh_triangles": 10286,
+  "file_sha256": {
+    "simulation/gui/ptic_architecture.config": "7bc19d1d3942d7b52c33b3714dc2c18db899e5aec48ec1b41dba389d7656be7c",
+    "simulation/gui/ptic_groundlevel.config": "5b66e63147b8691f4c4dad04cfd87e888154d261ade3e2c2ebbc4469eff7c23c",
+    "simulation/gui/ptic_overview.config": "e4bcec48e9b5459206f61b1aba0b0c5d6ec35df6ec197bcf7d054d701a3c3267",
+    "simulation/gui/ptic_topdown.config": "574ac6a15bbe7e49343c2d5b94fe54ad5374894db912809437e481b8b491e47e",
+    "simulation/materials/ptic_materials.json": "5b4ee715a2b9517da4285f4784f1eb3e8e908bb43c84a7c1402b5e88e445f119",
+    "simulation/models/campus_furniture/model.config": "1470afaed6c35ea10934e0105c9415161f6132ca0b5aeb2fb139fbd3b98ea46b",
+    "simulation/models/campus_furniture/model.sdf": "1a137ea41feca72830ffbcf67ccc0e9051bea39af16b03d32f707f63d2e934e4",
+    "simulation/models/campus_light/model.config": "a26519920d56f493e7026b3343e31d53491ffc0c068f96576a2861cfc5ef7068",
+    "simulation/models/campus_light/model.sdf": "b644e179854142b1ebdfa9165757017fb5ae43454e667c73a5ae74b7fba2ac1c",
+    "simulation/models/concrete_curb/model.config": "94b3fdc2949fdd0bcd8d14921984f315bc29aadee83824f6c92552e28ceb547b",
+    "simulation/models/concrete_curb/model.sdf": "4f7113ed4339afecd168f7b7d12851063511627c285ea5da0d3125ed89388232",
+    "simulation/models/concrete_path/meshes/loop.obj": "0f6e1e68892704a907dc2867a5278818eb8807bfffd450ee80af51c292e21fa3",
+    "simulation/models/concrete_path/model.config": "231d741a78e56de5540fddbdf28e21a21535289cdec735df030c9060cd8342d1",
+    "simulation/models/concrete_path/model.sdf": "c0f41420dff492a8e47202b21daea81037fbc5bf5c1f83dc984e4f4bb5c5a27a",
+    "simulation/models/generic_workshop/model.config": "abd8eff9f5e3bf476f5faa17782abcfe5b4ede6a6f27071cc214eee5b6c71511",
+    "simulation/models/generic_workshop/model.sdf": "b93a0ee2ab45334272df71a0e2393a8a08ef6274d1531dba45f48939c9919cec",
+    "simulation/models/grass_surface/model.config": "b29ffe27a7d4cca38abf6670e7e89be4cc1a5612a5758553eee676f7b34a95eb",
+    "simulation/models/grass_surface/model.sdf": "1a36f37fd80c6ca9027c4197a8ac12d449fc3186e38d500bc891a6b75e44c3ff",
+    "simulation/models/landscaped_island/model.config": "ccbdb611d667c269a1e6f1a265e25b1c633bfb02e1ee9a8b13827271a2436fd5",
+    "simulation/models/landscaped_island/model.sdf": "4b04c90b46845bd7dcf66eba814f009a852d947edbe8092e498bd219359f3a49",
+    "simulation/models/ornamental_tree/meshes/crown.obj": "5a0fb8a0cbb1423c599f8b1cdcaeede2390106eb77a6752016fb86851079923c",
+    "simulation/models/ornamental_tree/model.config": "e97317c740f4632f6a0a59077d530bb3890b1acae79dabffab9a91ab9c6a5b64",
+    "simulation/models/ornamental_tree/model.sdf": "4bf9a5d2594a9c685d0fcede974094444d7df6940900d1dd4c95adb13f7ef2fc",
+    "simulation/models/ornamental_tree_01/model.config": "51d145898bc2d727532460784f65bd96bc97c6a53645c8e9bc79dbaef0da5e3f",
+    "simulation/models/ornamental_tree_01/model.sdf": "fca6f44b35af577937e0ae4b68bb58be7e3aa6471ce492f8c7665ca471a7bac3",
+    "simulation/models/ornamental_tree_02/model.config": "2fe078e5761deba78bc0b29f36466a2df33a639b09e048b348a533dd11630afa",
+    "simulation/models/ornamental_tree_02/model.sdf": "b9a797dd10431283e595e2e147015d32d7b56c8f0aeb197b59b28411bc843aeb",
+    "simulation/models/ornamental_tree_03/model.config": "ba08d95739d1f099ff9a2699fb9e0e841c3faa54a3fd24ed5c123acf37cb5b3a",
+    "simulation/models/ornamental_tree_03/model.sdf": "03f2324a27e31e386815d393b6696ba2773cb45e84789c98a28772f70948555c",
+    "simulation/models/ornamental_tree_04/model.config": "9a92fd8c7b8199e6d3b7e98837b1d404ac9d49a878ce7b0dff953a5f30238062",
+    "simulation/models/ornamental_tree_04/model.sdf": "3efe631d7e8ee497d669f32b526f2d7bcd1f601cb47b9b403716609798fe07cc",
+    "simulation/models/ornamental_tree_05/model.config": "748599354967295edb8c5a1e7eed47ee87bb82d6cbb376d4779209b640f1f163",
+    "simulation/models/ornamental_tree_05/model.sdf": "0eb1bb1c9aa0828b6a3abbb00147e1d3f3eb6c4a3c16abff341b6c84b981a28a",
+    "simulation/models/ptic_backdrop/meshes/forest.obj": "c4061fc304160b7faa7146bffa558d1a9d46a400de86d74615b309d7c822b1b4",
+    "simulation/models/ptic_backdrop/meshes/hills.obj": "dba2954a5f57cc24d93908c4c4f9c7d0a5bccc245c1b604b7997224d2c2b1799",
+    "simulation/models/ptic_backdrop/model.config": "de88886dce3a53ce392161d098c5369f6e93a948f93ce99793f2fd86b7f32daa",
+    "simulation/models/ptic_backdrop/model.sdf": "eb83e49cc455c9b8a84e9c087dd6ce367df80ab461b3de473fd669de0466d20b",
+    "simulation/models/ptic_materials/meshes/lawn.obj": "eb0a1d5b4bb5dc80f31cb0e59f195d35bb075422cc120ecc8e561315ad0eb6d6",
+    "simulation/models/ptic_materials/model.config": "5553258429e8720efbffea9b6d98e147fc25f39c61669223237e4bbf87ee3d07",
+    "simulation/models/ptic_materials/model.sdf": "c7936664181dda9d1428b66d7f495775b6316de85e36a9b35dc8918dc7f0a59a",
+    "simulation/models/ptic_materials/textures/asphalt.png": "519270c6fd0e939eea7b833913129e4da9ad81564aac69311a49f65d46bba52d",
+    "simulation/models/ptic_materials/textures/bark.png": "ca59e80cb447bae8dc45081e0f270f4a22387770ea669a273c8980b162917d01",
+    "simulation/models/ptic_materials/textures/concrete.png": "f77b63110f63a8296b20782352bf87af08e08cf1fdc13b626a63c7e74d456ec7",
+    "simulation/models/ptic_materials/textures/grass.png": "982abe9c8094960547e3e1779d93ba8b65c611a78c759f8dd2e814d9cae00129",
+    "simulation/models/research_laboratory/model.config": "f88486e988b82ae5427c778fc734fb3223a231b2d6528a7cc515e07f8f2d7ab9",
+    "simulation/models/research_laboratory/model.sdf": "cd22ffe83ffa47b02cd20257478cb851c0e4e1880e53d1b0957ef391496677ab",
+    "simulation/models/research_office/model.config": "5e8f8b863a94adbc98104c216dece5cd162e94dabbfe853404d2785784481fad",
+    "simulation/models/research_office/model.sdf": "9fde7a36ccc0b090e331484c9acbbe952f4924b398bb3fc58c36491a2262e621",
+    "simulation/models/road_surface/meshes/asphalt.obj": "500a229041cc4d7d57597d278b5de1d88e948b51960e6c7489becc6156e72c3d",
+    "simulation/models/road_surface/meshes/curb_inner.obj": "faa190520996bb8e1f1f587ab4aaea271d5497f34d0ea6eee392b471f54bf4e6",
+    "simulation/models/road_surface/meshes/curb_outer.obj": "57bb0678ec307ce7582d3becf01687e62aa6c05190be9c7253d853d8f706f49f",
+    "simulation/models/road_surface/model.config": "e148cdb92cee460567f5482b327e63096f61769fc6e7bffbed1cb90e2d845268",
+    "simulation/models/road_surface/model.sdf": "b3133e1d36c2c21a12650259fa1ef3ade5159d5a6d3ea78ef52f9662cdc268d2",
+    "simulation/models/tropical_tree/meshes/crown.obj": "5a0fb8a0cbb1423c599f8b1cdcaeede2390106eb77a6752016fb86851079923c",
+    "simulation/models/tropical_tree/model.config": "5b31483e36e333f411193fd2df0229f5641acbbd4c10210889cfd82df49aa336",
+    "simulation/models/tropical_tree/model.sdf": "74c075b89b67f7f77bb0eac09927974c594754e0e05210583cdb0f972ec0ca8e",
+    "simulation/models/tropical_tree_01/model.config": "4d591a6b3df4a85c164f7db48f2856b07a07c08ccea7815b3b5ecf4de4b9d2a0",
+    "simulation/models/tropical_tree_01/model.sdf": "c4ad7442a779a1cee4b289260e02b505a3deb3a45d4e038b60dd889b98dd58a4",
+    "simulation/models/tropical_tree_02/model.config": "85b7ca203d96d831ce55908bce78dbfdc4628f8dd17a9a9868120dd14ee578d8",
+    "simulation/models/tropical_tree_02/model.sdf": "0b6389ff5b3d2c55307eac71708663eab7ece8438b77cb9a77e2f4df25c2d928",
+    "simulation/models/tropical_tree_03/model.config": "a935cc432c24d8b94bf065fe99ac8370f92a975da2ab931509cbe2996a6378b7",
+    "simulation/models/tropical_tree_03/model.sdf": "e8f7c97a2178d0b37c62033107ea74c00fc6f3072e02867bb51d71c000653f34",
+    "simulation/models/tropical_tree_04/model.config": "c3e287cbcda440e3a03aeff8c751ec0752f6284e9d8f1bd240c7d6817eda5b10",
+    "simulation/models/tropical_tree_04/model.sdf": "216e5019d361f262b74847dcb76b69c5a50c6f5e8e5acaf90160692ea5365ebe",
+    "simulation/models/tropical_tree_05/model.config": "aa242681e7207559b78ff8dc24a71a20f853b963b5e256065d7c544072209136",
+    "simulation/models/tropical_tree_05/model.sdf": "e0a0cd5f336dde6d2a88ef811ea9f85c277caf2c5ede0c8dcd238df6192c433d",
+    "simulation/models/vegetation/meshes/crown.obj": "5a0fb8a0cbb1423c599f8b1cdcaeede2390106eb77a6752016fb86851079923c",
+    "simulation/models/vegetation/model.config": "95038200220746c0afaa9001636ec90330fada2f3719dcc525570a58cf0e71ac",
+    "simulation/models/vegetation/model.sdf": "ed32ce892491da182a9a3536fa68ee9efc3053033bfbdf7d81d4969ceda3046f",
+    "simulation/models/vegetation_01/model.config": "05bf43a78af0d759e3cb5694bd64a66183c19fb65921b50a5acb9b36f6602e35",
+    "simulation/models/vegetation_01/model.sdf": "f0119af95ada112f6957a0003010ccc891d625be5eb3fa6a0692eb9361657e03",
+    "simulation/models/vegetation_02/model.config": "5e7b5cd7686711022905209151634ce255e6080d0fae3f0ad549f06b04cf616f",
+    "simulation/models/vegetation_02/model.sdf": "e2b949c55d951fa306f9ee3b1491d17923ba775f40a627ff001a2ca89b2dbca6",
+    "simulation/models/vegetation_03/model.config": "403ecdd7e224da3d75e13ef6906432f7ef4538f8ed6da55479ba4fa0920e77b5",
+    "simulation/models/vegetation_03/model.sdf": "e8b7bcc604d7fdd428762f956452f78818055ec06bbedae064893fbb12c79847",
+    "simulation/models/vegetation_04/model.config": "7324c81d451348559db153ed1f4d034808e7459d28539b9d1b77dc9303679bd9",
+    "simulation/models/vegetation_04/model.sdf": "5d6dd23b090d66931f328d7628663aa32ea5d434f661cd7c4f8ec101680e7947",
+    "simulation/models/vegetation_05/model.config": "bb6d5eb84b301a21c57d5113da2a9f3cca8cc8e4e89ea21446194f997d7eb224",
+    "simulation/models/vegetation_05/model.sdf": "6615f105b3673d84673debb5cae1bfc41d5319d6cded1c98bdbfb35829f65ab4",
+    "simulation/worlds/rbi_ptic_environment.sdf": "300f3e5482d12b7d9d13bb0ccacd1665f924791c770b149d132bab6d79222973"
+  }
+}

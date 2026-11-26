@@ -1,0 +1,29 @@
+<annotation>
+	<folder></folder>
+	<filename>IMG20240414021209_jpg.rf.e2c5126da3d19addccdb5fd6ee18519c.jpg</filename>
+	<path>IMG20240414021209_jpg.rf.e2c5126da3d19addccdb5fd6ee18519c.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>red</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>200</xmin>
+			<xmax>475</xmax>
+			<ymin>362</ymin>
+			<ymax>588</ymax>
+		</bndbox>
+	</object>
+	<metadata>
+	</metadata>
+</annotation>

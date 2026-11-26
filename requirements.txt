@@ -1,0 +1,26 @@
+# ==============================================================================
+# Red Balloon Interceptor - Dedicated Environment Requirements
+# ==============================================================================
+
+# Core Deep Learning Framework
+torch
+torchvision
+
+# Computer Vision & Image Processing
+opencv-python
+Pillow
+imagehash
+
+# Data Processing & Visualization
+numpy
+pandas
+matplotlib
+seaborn
+tqdm
+
+# Model Export & Edge Inference Testing
+onnx
+onnxruntime
+
+# Jupyter Notebook Kernel Support
+ipykernel

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version="1.9">
+  <model name="campus_furniture">
+    <static>true</static>
+    <link name="body">
+      <visual name="bench_seat">
+        <pose>0 0 0.55 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>2.3 0.65 0.12</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.28 0.22 0.15 1</ambient>
+          <diffuse>0.28 0.22 0.15 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="bench_leg_-0.8">
+        <pose>-0.8 0 0.25 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.12 0.55 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="bench_leg_0.8">
+        <pose>0.8 0 0.25 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.12 0.55 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.12 0.16 0.17 1</ambient>
+          <diffuse>0.12 0.16 0.17 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.55</roughness>
+              <metalness>0.15</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="bench_back">
+        <pose>0 0.3 0.9 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>2.3 0.1 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.28 0.22 0.15 1</ambient>
+          <diffuse>0.28 0.22 0.15 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

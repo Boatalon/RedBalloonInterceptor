@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version="1.9">
+  <model name="ornamental_tree_03">
+    <static>true</static>
+    <link name="body">
+      <visual name="trunk">
+        <pose>0 0 1.76302689979 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <cylinder>
+            <radius>0.13992276982466825</radius>
+            <length>3.5260537995816397</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.28 0.22 0.15 1</ambient>
+          <diffuse>0.28 0.22 0.15 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="branch_0">
+        <pose>0.279845539649 0 3.07830093614 0.5 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <cylinder>
+            <radius>0.06716292951584076</radius>
+            <length>1.7350423458258863</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.28 0.22 0.15 1</ambient>
+          <diffuse>0.28 0.22 0.15 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="branch_1">
+        <pose>-0.139922769825 0.242353346472 3.07830093614 0.5 0 2.09439510239</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <cylinder>
+            <radius>0.06716292951584076</radius>
+            <length>1.7350423458258863</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.28 0.22 0.15 1</ambient>
+          <diffuse>0.28 0.22 0.15 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="branch_2">
+        <pose>-0.139922769825 -0.242353346472 3.07830093614 0.5 0 4.18879020479</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <cylinder>
+            <radius>0.06716292951584076</radius>
+            <length>1.7350423458258863</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.28 0.22 0.15 1</ambient>
+          <diffuse>0.28 0.22 0.15 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="crown_0">
+        <pose>0.727324967259 0.0199456305474 4.02396725342 0 0 5.27575930922</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://ornamental_tree/meshes/crown.obj</uri>
+            <scale>1.2923912887 1.61466713623 1.19090520013</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.127642604774 0.299682637295 0.1054438909 1</ambient>
+          <diffuse>0.127642604774 0.299682637295 0.1054438909 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9134491475462874</roughness>
+              <metalness>0</metalness>
+              <albedo_map>model://ptic_materials/textures/grass.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="crown_1">
+        <pose>-0.0791224233166 0.723283539357 4.00363203917 0 0 3.85557939419</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://ornamental_tree/meshes/crown.obj</uri>
+            <scale>1.43814432453 1.45957306655 1.23778786115</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.244097062477 0.382064967355 0.116742073359 1</ambient>
+          <diffuse>0.244097062477 0.382064967355 0.116742073359 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.8844319904090359</roughness>
+              <metalness>0</metalness>
+              <albedo_map>model://ptic_materials/textures/grass.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="crown_2">
+        <pose>-0.718137936626 -0.11695016099 4.18756527245 0 0 0.850555515771</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://ornamental_tree/meshes/crown.obj</uri>
+            <scale>1.50282763856 1.38094634221 1.0998346987</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.122503388461 0.28761665117 0.101198451338 1</ambient>
+          <diffuse>0.122503388461 0.28761665117 0.101198451338 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.8618416265892644</roughness>
+              <metalness>0</metalness>
+              <albedo_map>model://ptic_materials/textures/grass.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="crown_3">
+        <pose>0.0361248635183 -0.726701059867 4.08624241072 0 0 0.477904401217</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://ornamental_tree/meshes/crown.obj</uri>
+            <scale>1.67572477947 1.41900759637 1.37734511975</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.236871616182 0.370755573154 0.11328642513 1</ambient>
+          <diffuse>0.236871616182 0.370755573154 0.11328642513 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9107328335259358</roughness>
+              <metalness>0</metalness>
+              <albedo_map>model://ptic_materials/textures/grass.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

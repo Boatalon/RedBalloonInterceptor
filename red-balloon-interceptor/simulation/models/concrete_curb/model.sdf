@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version="1.9">
+  <model name="concrete_curb">
+    <static>true</static>
+    <link name="body">
+      <visual name="curb">
+        <pose>0 0 0.125 0 0 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>4 0.3 0.25</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.59 0.63 0.63 1</ambient>
+          <diffuse>0.59 0.63 0.63 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

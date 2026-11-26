@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "world_name": "rbi_ptic_environment",
+  "fictional_non_georeferenced": true,
+  "coordinates": {
+    "frame": "local_ENU",
+    "axes": "+X east, +Y north, +Z up",
+    "length_unit": "m",
+    "angle_unit": "rad",
+    "geodetic_origin": null
+  },
+  "field": {
+    "size_m": [
+      400,
+      400
+    ],
+    "elevation_m": 0,
+    "slab_thickness_m": 0.3
+  },
+  "gravity_mps2": [
+    0,
+    0,
+    -9.80665
+  ],
+  "wind_enabled": false,
+  "seed": 271827,
+  "physics": {
+    "max_step_size_s": 0.001,
+    "real_time_factor": 1
+  },
+  "default_profile": "MEDIUM",
+  "default_lighting": "midday",
+  "buildings": [
+    {
+      "name": "research_office",
+      "category": "office",
+      "size_m": [
+        60,
+        32,
+        20
+      ],
+      "position_xy_m": [
+        -72,
+        48
+      ],
+      "yaw_rad": 0
+    },
+    {
+      "name": "research_laboratory",
+      "category": "laboratory",
+      "size_m": [
+        52,
+        34,
+        25
+      ],
+      "position_xy_m": [
+        68,
+        72
+      ],
+      "yaw_rad": 0
+    },
+    {
+      "name": "generic_workshop",
+      "category": "workshop",
+      "size_m": [
+        64,
+        38,
+        30
+      ],
+      "position_xy_m": [
+        75,
+        -92
+      ],
+      "yaw_rad": 0
+    }
+  ],
+  "materials": {
+    "white_concrete": {
+      "rgba": [
+        0.86,
+        0.87,
+        0.84,
+        1
+      ],
+      "roughness": 0.88,
+      "metalness": 0
+    },
+    "light_gray_concrete": {
+      "rgba": [
+        0.59,
+        0.63,
+        0.63,
+        1
+      ],
+      "roughness": 0.9,
+      "metalness": 0
+    },
+    "glass": {
+      "rgba": [
+        0.23,
+        0.36,
+        0.42,
+        1
+      ],
+      "roughness": 0.24,
+      "metalness": 0.18
+    },
+    "aluminum": {
+      "rgba": [
+        0.65,
+        0.7,
+        0.72,
+        1
+      ],
+      "roughness": 0.4,
+      "metalness": 0.3
+    },
+    "asphalt": {
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "roughness": 0.96,
+      "metalness": 0
+    },
+    "pavement": {
+      "rgba": [
+        0.65,
+        0.66,
+        0.62,
+        1
+      ],
+      "roughness": 0.88,
+      "metalness": 0
+    },
+    "grass": {
+      "rgba": [
+        0.29,
+        0.4,
+        0.15,
+        1
+      ],
+      "roughness": 0.97,
+      "metalness": 0
+    },
+    "foliage": {
+      "rgba": [
+        0.115,
+        0.27,
+        0.095,
+        1
+      ],
+      "roughness": 0.95,
+      "metalness": 0
+    },
+    "foliage_light": {
+      "rgba": [
+        0.23,
+        0.36,
+        0.11,
+        1
+      ],
+      "roughness": 0.94,
+      "metalness": 0
+    },
+    "bark": {
+      "rgba": [
+        0.28,
+        0.22,
+        0.15,
+        1
+      ],
+      "roughness": 1,
+      "metalness": 0
+    },
+    "painted_steel": {
+      "rgba": [
+        0.12,
+        0.16,
+        0.17,
+        1
+      ],
+      "roughness": 0.55,
+      "metalness": 0.15
+    },
+    "road_paint": {
+      "rgba": [
+        0.83,
+        0.83,
+        0.71,
+        1
+      ],
+      "roughness": 0.9,
+      "metalness": 0
+    },
+    "hill_green": {
+      "rgba": [
+        0.21,
+        0.33,
+        0.2,
+        1
+      ],
+      "roughness": 1,
+      "metalness": 0
+    }
+  },
+  "ground": {
+    "material": "grass",
+    "reference_grid": false,
+    "grid_spacing_m": 50,
+    "texture_tile_m": 12
+  },
+  "roads": {
+    "material": "asphalt",
+    "half_extent_m": 144,
+    "width_m": 12,
+    "corner_radius_m": 26,
+    "cross_street_y_m": -30,
+    "curb_material": "light_gray_concrete",
+    "path_material": "pavement",
+    "path_width_m": 3.5
+  },
+  "vegetation": {
+    "tree_material": "foliage",
+    "trunk_material": "bark",
+    "variants": 6,
+    "tree_height_range_m": [
+      8,
+      13
+    ],
+    "ornamental_height_range_m": [
+      3.5,
+      5.8
+    ],
+    "setback_m": 5
+  },
+  "backdrop": {
+    "enabled": true,
+    "extent_m": 1800,
+    "hill_height_range_m": [
+      60,
+      140
+    ],
+    "material": "hill_green"
+  },
+  "rendering_profiles": {
+    "LOW": {
+      "pbr": false,
+      "textures": false,
+      "shadows": false,
+      "facade_detail": 1,
+      "tree_count": 28,
+      "ornamental_count": 16,
+      "bush_count": 28,
+      "forest_count": 36,
+      "mesh_segments": 12,
+      "mesh_rings": 7
+    },
+    "MEDIUM": {
+      "pbr": true,
+      "textures": true,
+      "shadows": true,
+      "facade_detail": 2,
+      "tree_count": 58,
+      "ornamental_count": 28,
+      "bush_count": 60,
+      "forest_count": 60,
+      "mesh_segments": 18,
+      "mesh_rings": 10
+    },
+    "HIGH": {
+      "pbr": true,
+      "textures": true,
+      "shadows": true,
+      "facade_detail": 3,
+      "tree_count": 86,
+      "ornamental_count": 40,
+      "bush_count": 90,
+      "forest_count": 88,
+      "mesh_segments": 24,
+      "mesh_rings": 14
+    }
+  },
+  "lighting_presets": {
+    "morning": {
+      "direction": [
+        -0.85,
+        0.22,
+        -0.42
+      ],
+      "ambient_rgba": [
+        0.45,
+        0.45,
+        0.42,
+        1
+      ],
+      "background_rgba": [
+        0.66,
+        0.77,
+        0.86,
+        1
+      ],
+      "diffuse_rgba": [
+        1,
+        0.88,
+        0.7,
+        1
+      ],
+      "intensity": 1,
+      "shadows": true,
+      "fog_density": 0.00035
+    },
+    "midday": {
+      "direction": [
+        -0.35,
+        0.25,
+        -0.9
+      ],
+      "ambient_rgba": [
+        0.48,
+        0.5,
+        0.5,
+        1
+      ],
+      "background_rgba": [
+        0.58,
+        0.75,
+        0.89,
+        1
+      ],
+      "diffuse_rgba": [
+        1,
+        0.98,
+        0.92,
+        1
+      ],
+      "intensity": 1,
+      "shadows": true,
+      "fog_density": 0.00022
+    },
+    "afternoon": {
+      "direction": [
+        0.8,
+        -0.25,
+        -0.4
+      ],
+      "ambient_rgba": [
+        0.44,
+        0.43,
+        0.4,
+        1
+      ],
+      "background_rgba": [
+        0.7,
+        0.76,
+        0.8,
+        1
+      ],
+      "diffuse_rgba": [
+        1,
+        0.83,
+        0.64,
+        1
+      ],
+      "intensity": 1,
+      "shadows": true,
+      "fog_density": 0.0004
+    },
+    "overcast": {
+      "direction": [
+        -0.2,
+        0.1,
+        -1
+      ],
+      "ambient_rgba": [
+        0.7,
+        0.72,
+        0.73,
+        1
+      ],
+      "background_rgba": [
+        0.72,
+        0.76,
+        0.78,
+        1
+      ],
+      "diffuse_rgba": [
+        0.6,
+        0.65,
+        0.68,
+        1
+      ],
+      "intensity": 0.5,
+      "shadows": false,
+      "fog_density": 0.00065
+    }
+  },
+  "gui": {
+    "width_px": 1400,
+    "height_px": 950,
+    "horizontal_fov_rad": 1.0471975512,
+    "far_clip_m": 3000,
+    "views": {
+      "overview": {
+        "position_m": [
+          340,
+          -475,
+          390
+        ],
+        "look_at_m": [
+          0,
+          0,
+          8
+        ],
+        "near_clip_m": 3
+      },
+      "topdown": {
+        "position_m": [
+          0,
+          0,
+          650
+        ],
+        "look_at_m": [
+          0,
+          0,
+          0
+        ],
+        "near_clip_m": 3
+      },
+      "architecture": {
+        "position_m": [
+          13,
+          -61,
+          35
+        ],
+        "look_at_m": [
+          -65,
+          45,
+          11
+        ],
+        "near_clip_m": 3
+      },
+      "groundlevel": {
+        "position_m": [
+          -110,
+          -22,
+          1.8
+        ],
+        "look_at_m": [
+          -64,
+          45,
+          9
+        ],
+        "near_clip_m": 3
+      }
+    }
+  }
+}

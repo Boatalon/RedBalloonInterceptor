@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "world_name": "rbi_phase1",
+  "coordinate_convention": {
+    "frame": "local_ENU",
+    "origin": "field center at ground level",
+    "axes": {
+      "x": "east",
+      "y": "north",
+      "z": "up"
+    },
+    "length_unit": "m",
+    "angle_unit": "rad",
+    "gravity_unit": "m/s^2",
+    "note": "Local visualization axes only; no real GPS origin, flight route, or operational zone is defined."
+  },
+  "field": {
+    "length_x_m": 400.0,
+    "width_y_m": 400.0,
+    "ground_elevation_m": 0.0,
+    "slab_thickness_m": 0.2
+  },
+  "survey_references": {
+    "separation_m": 350.0,
+    "axis": "x",
+    "center_xy_m": [
+      0.0,
+      0.0
+    ],
+    "passive_only": true
+  },
+  "altitude_reference": {
+    "height_agl_m": 80.0,
+    "position_xy_m": [
+      0.0,
+      100.0
+    ],
+    "passive_only": true
+  },
+  "grid_spacing_m": 50.0,
+  "gravity_mps2": [
+    0.0,
+    0.0,
+    -9.80665
+  ],
+  "wind": {
+    "enabled": false,
+    "linear_velocity_mps": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "physics": {
+    "max_step_size_s": 0.001,
+    "real_time_factor": 1.0,
+    "seed": 42
+  },
+  "lighting": {
+    "ambient_rgba": [
+      0.65,
+      0.65,
+      0.65,
+      1.0
+    ],
+    "background_rgba": [
+      0.68,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "sun_diffuse_rgba": [
+      0.9,
+      0.9,
+      0.85,
+      1.0
+    ],
+    "sun_specular_rgba": [
+      0.1,
+      0.1,
+      0.1,
+      1.0
+    ],
+    "sun_direction": [
+      -0.4,
+      0.2,
+      -0.9
+    ],
+    "shadows": false
+  },
+  "visualization": {
+    "ground_rgba": [
+      0.36,
+      0.39,
+      0.42,
+      1.0
+    ],
+    "grid_rgba": [
+      0.65,
+      0.69,
+      0.72,
+      1.0
+    ],
+    "grid_width_m": 0.6,
+    "boundary_width_m": 1.4,
+    "marker_radius_m": 4.0,
+    "marker_height_m": 6.0,
+    "label_height_m": 12.0,
+    "note": "Display styling only. All references, grids, axes, labels and boundary lines are visual-only."
+  },
+  "landing_pad": {
+    "position_xy_m": [
+      5.0,
+      -20.0
+    ],
+    "size_m": [
+      3.0,
+      3.0,
+      0.08
+    ]
+  },
+  "gui": {
+    "width_px": 1400,
+    "height_px": 950,
+    "near_clip_m": 5.0,
+    "far_clip_m": 3000.0,
+    "horizontal_fov_rad": 1.0471975512,
+    "perspective_pose": [
+      340.0,
+      -475.0,
+      390.0,
+      0.0,
+      0.5658,
+      2.194
+    ],
+    "topdown_pose": [
+      0.0,
+      0.0,
+      700.0,
+      0.0,
+      1.5707963268,
+      1.5707963268
+    ]
+  }
+}

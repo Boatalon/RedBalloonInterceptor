@@ -1,0 +1,50 @@
+{
+  "total_images": 350,
+  "split_ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "splits": {
+    "train": {
+      "images": 280,
+      "percentage": 80.0,
+      "red": 127,
+      "blue": 93,
+      "green": 94,
+      "total_objects": 314,
+      "objects_per_image": {
+        "1": 254,
+        "2": 20,
+        "3": 4,
+        "4": 2
+      }
+    },
+    "val": {
+      "images": 35,
+      "percentage": 10.0,
+      "red": 14,
+      "blue": 10,
+      "green": 12,
+      "total_objects": 36,
+      "objects_per_image": {
+        "1": 32,
+        "2": 2,
+        "0": 1
+      }
+    },
+    "test": {
+      "images": 35,
+      "percentage": 10.0,
+      "red": 15,
+      "blue": 14,
+      "green": 11,
+      "total_objects": 40,
+      "objects_per_image": {
+        "1": 31,
+        "2": 3,
+        "3": 1
+      }
+    }
+  }
+}

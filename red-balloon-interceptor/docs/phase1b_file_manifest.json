@@ -1,0 +1,138 @@
+{
+  "recorded_on": "2026-11-27",
+  "changes": [
+    {
+      "path": "README.md",
+      "status": "modified",
+      "sha256": "57628ea7a9e6622b5942345a5890abf99aae98f65c240ae701bf15219cf55371",
+      "bytes": 6222
+    },
+    {
+      "path": "config/world_config.yaml",
+      "status": "created",
+      "sha256": "e5d8e4512b528b3cf848d5c5d3d6cc4b32dea5b29910d5a7ca2293ce1d571915",
+      "bytes": 2452
+    },
+    {
+      "path": "docs/architecture.md",
+      "status": "modified",
+      "sha256": "840ddf0daacf121edd6a69b2c3099a2bc907536a4c9de1fa6c7515b16ed54c06",
+      "bytes": 5008
+    },
+    {
+      "path": "docs/environment_report.md",
+      "status": "modified",
+      "sha256": "6420bf39040505654271df51e5d8dae8d050cb16e34b6e27c5128a572ff583da",
+      "bytes": 10768
+    },
+    {
+      "path": "docs/phase1b_commands.md",
+      "status": "created",
+      "sha256": "d53caec9870f0e95679b5203272ebeb4aa7d925be218995727d1180faf4bc47c",
+      "bytes": 5066
+    },
+    {
+      "path": "docs/phase1b_results.md",
+      "status": "created",
+      "sha256": "54c74d1ce1e7b3ecf310801b1594d6079568c9b2b4b70daf5d672ee6aa6d468d",
+      "bytes": 7710
+    },
+    {
+      "path": "docs/screenshots/phase1b_perspective.png",
+      "status": "created",
+      "sha256": "7b34f2496b0369cddbad9608b36a7104ab936d3ef8cd57ff34528c7222bac936",
+      "bytes": 32272
+    },
+    {
+      "path": "docs/screenshots/phase1b_topdown.png",
+      "status": "created",
+      "sha256": "76a8c539b1ad926139d1b887bbb998bb9d04ff701bdb7a3109bcb1e12969c205",
+      "bytes": 8245
+    },
+    {
+      "path": "docs/screenshots/provenance.json",
+      "status": "created",
+      "sha256": "24ec7a2402816ba636872a4a647a1932d12b64bb7a5f603ea69ed74c76abafde",
+      "bytes": 1453
+    },
+    {
+      "path": "docs/sitl_compatibility.md",
+      "status": "modified",
+      "sha256": "d3e72bef566073f293ef2a2df84ada193eb35c3a175949eedc6d1623003a5f99",
+      "bytes": 9452
+    },
+    {
+      "path": "docs/test_plan.md",
+      "status": "modified",
+      "sha256": "3631f487e4d64ec19a17bc6d1407c49926747662c58587d063a255dcaa207ef7",
+      "bytes": 9167
+    },
+    {
+      "path": "docs/test_results.md",
+      "status": "modified",
+      "sha256": "e6d9ece633c37d79a2420e0cd6e7dd8501bfd32b6777119b31b07b30902dfaba",
+      "bytes": 3804
+    },
+    {
+      "path": "scripts/build_world.py",
+      "status": "created",
+      "sha256": "09e8503312f208fc3756a8d7e38eb20c5155c7832dc835a84f8a18a06e3e8bdf",
+      "bytes": 13324
+    },
+    {
+      "path": "scripts/launch_world.sh",
+      "status": "modified",
+      "sha256": "a4d596ca048265421f3be04c47cf50a4ba5de62e76e60914fc153aac0d7cad92",
+      "bytes": 1449
+    },
+    {
+      "path": "scripts/validate_world_runtime.py",
+      "status": "created",
+      "sha256": "686fe26e6e5359d13608dc7f3d6934995be9f2da76f5f57ef49453ad5630e666",
+      "bytes": 12575
+    },
+    {
+      "path": "simulation/README.md",
+      "status": "modified",
+      "sha256": "65735c07228ac3285e54e4083ad85e7140c39a786a3895252a69ed6ecf382031",
+      "bytes": 3446
+    },
+    {
+      "path": "simulation/gui/perspective.config",
+      "status": "created",
+      "sha256": "f7df0efa1d7428ad9ab7279f82fe2c7872f5b39ca27b2c8596e3235c7f856bf4",
+      "bytes": 2744
+    },
+    {
+      "path": "simulation/gui/topdown.config",
+      "status": "created",
+      "sha256": "4e2330767ee820d3319f3dfc08276732ffc9f0176e6b5a80db837456fc06d9aa",
+      "bytes": 2752
+    },
+    {
+      "path": "simulation/worlds/rbi_phase1.sdf",
+      "status": "modified",
+      "sha256": "9ff7d4f595f930d335889f90b70ca1fc0696293c12a63a24fe6957acfa4c4d3c",
+      "bytes": 63399
+    },
+    {
+      "path": "tests/test_offline.py",
+      "status": "modified",
+      "sha256": "e4d0f5a3f0a44206919c12b8e4762fa9815b9eb25810205fcd3ec19db4c1aba0",
+      "bytes": 6123
+    },
+    {
+      "path": "tests/test_runtime_helpers.py",
+      "status": "created",
+      "sha256": "abc3acd3c0f09cb4a7f5dd4f736b9065aaee6da2b8c59bfe3fd1b1feed04b477",
+      "bytes": 843
+    },
+    {
+      "path": "tests/test_world.py",
+      "status": "created",
+      "sha256": "3276d43f5c9acbd4a78eb446be1658d0c2bca617155bbfc2a149523b99e5cb5f",
+      "bytes": 6385
+    }
+  ],
+  "note": "This manifest excludes itself, generated logs/plots and bytecode. Original source snapshot and historical manifest retained."
+}

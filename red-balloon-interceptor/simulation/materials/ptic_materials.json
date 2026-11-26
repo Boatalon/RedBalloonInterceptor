@@ -1,0 +1,132 @@
+{
+  "white_concrete": {
+    "rgba": [
+      0.86,
+      0.87,
+      0.84,
+      1
+    ],
+    "roughness": 0.88,
+    "metalness": 0
+  },
+  "light_gray_concrete": {
+    "rgba": [
+      0.59,
+      0.63,
+      0.63,
+      1
+    ],
+    "roughness": 0.9,
+    "metalness": 0
+  },
+  "glass": {
+    "rgba": [
+      0.23,
+      0.36,
+      0.42,
+      1
+    ],
+    "roughness": 0.24,
+    "metalness": 0.18
+  },
+  "aluminum": {
+    "rgba": [
+      0.65,
+      0.7,
+      0.72,
+      1
+    ],
+    "roughness": 0.4,
+    "metalness": 0.3
+  },
+  "asphalt": {
+    "rgba": [
+      0.105,
+      0.12,
+      0.13,
+      1
+    ],
+    "roughness": 0.96,
+    "metalness": 0
+  },
+  "pavement": {
+    "rgba": [
+      0.65,
+      0.66,
+      0.62,
+      1
+    ],
+    "roughness": 0.88,
+    "metalness": 0
+  },
+  "grass": {
+    "rgba": [
+      0.29,
+      0.4,
+      0.15,
+      1
+    ],
+    "roughness": 0.97,
+    "metalness": 0
+  },
+  "foliage": {
+    "rgba": [
+      0.115,
+      0.27,
+      0.095,
+      1
+    ],
+    "roughness": 0.95,
+    "metalness": 0
+  },
+  "foliage_light": {
+    "rgba": [
+      0.23,
+      0.36,
+      0.11,
+      1
+    ],
+    "roughness": 0.94,
+    "metalness": 0
+  },
+  "bark": {
+    "rgba": [
+      0.28,
+      0.22,
+      0.15,
+      1
+    ],
+    "roughness": 1,
+    "metalness": 0
+  },
+  "painted_steel": {
+    "rgba": [
+      0.12,
+      0.16,
+      0.17,
+      1
+    ],
+    "roughness": 0.55,
+    "metalness": 0.15
+  },
+  "road_paint": {
+    "rgba": [
+      0.83,
+      0.83,
+      0.71,
+      1
+    ],
+    "roughness": 0.9,
+    "metalness": 0
+  },
+  "hill_green": {
+    "rgba": [
+      0.21,
+      0.33,
+      0.2,
+      1
+    ],
+    "roughness": 1,
+    "metalness": 0
+  }
+}

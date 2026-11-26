@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version="1.9">
+  <model name="vegetation_05">
+    <static>true</static>
+    <link name="body">
+      <visual name="crown_0">
+        <pose>0.285494557177 0.0864224611586 0.300724191894 0 0 3.59185218642</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://vegetation/meshes/crown.obj</uri>
+            <scale>0.35586342493 0.345025565211 0.279070739286</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.121561583563 0.28540545706 0.100420438595 1</ambient>
+          <diffuse>0.121561583563 0.28540545706 0.100420438595 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.8654160604685981</roughness>
+              <metalness>0</metalness>
+              <albedo_map>model://ptic_materials/textures/grass.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="crown_1">
+        <pose>-0.294808569201 -0.0454300725936 0.33008665893 0 0 2.82747560762</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://vegetation/meshes/crown.obj</uri>
+            <scale>0.316562610375 0.305698591578 0.281521371019</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.204973367197 0.32082787909 0.0980307408331 1</ambient>
+          <diffuse>0.204973367197 0.32082787909 0.0980307408331 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+          <pbr>
+            <metal>
+              <roughness>0.9088252326251837</roughness>
+              <metalness>0</metalness>
+              <albedo_map>model://ptic_materials/textures/grass.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,24 @@
+[
+  {
+    "artifact": "docs/screenshots/phase1b_perspective.png",
+    "source": "logs/phase1b-20261126T220119/final_perspective/run_01/screenshots/2026-11-27T04:57:56.745221000.png",
+    "sha256": "7b34f2496b0369cddbad9608b36a7104ab936d3ef8cd57ff34528c7222bac936",
+    "kind": "actual Gazebo GUI render capture, not synthetic or edited",
+    "view": "perspective",
+    "world_sha256": "9ff7d4f595f930d335889f90b70ca1fc0696293c12a63a24fe6957acfa4c4d3c",
+    "GUI_observed_alive": true,
+    "visual_review": "PASS: complete boundary, grid, A/B survey markers, altitude reference and axes visible",
+    "limitations": "Viewport capture excludes window chrome. Text uses simple visual stroke geometry. No flight or hardware shown."
+  },
+  {
+    "artifact": "docs/screenshots/phase1b_topdown.png",
+    "source": "logs/phase1b-20261126T220119/final_topdown/run_01/screenshots/2026-11-27T04:58:47.216982000.png",
+    "sha256": "76a8c539b1ad926139d1b887bbb998bb9d04ff701bdb7a3109bcb1e12969c205",
+    "kind": "actual Gazebo GUI render capture, not synthetic or edited",
+    "view": "topdown",
+    "world_sha256": "9ff7d4f595f930d335889f90b70ca1fc0696293c12a63a24fe6957acfa4c4d3c",
+    "GUI_observed_alive": true,
+    "visual_review": "PASS: complete boundary, grid, A/B survey markers, altitude reference and axes visible",
+    "limitations": "Viewport capture excludes window chrome. Text uses simple visual stroke geometry. No flight or hardware shown."
+  }
+]
