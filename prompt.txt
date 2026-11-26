@@ -1,0 +1,709 @@
+# Red Balloon Interceptor — Autonomous Development Handoff
+
+Act as a senior robotics simulation engineer, Gazebo developer, GNC research engineer, cross-platform software engineer, 3D environment developer, and software QA engineer.
+
+You are running as Claude Code inside Visual Studio Code on Windows.
+
+Take ownership of the remaining Phase 1C implementation and validation tasks in the currently opened workspace.
+
+The project was previously developed by OpenAI Codex on macOS.
+
+Your responsibility is to inspect, implement, execute, troubleshoot, test, and document the project directly.
+
+Do not merely provide tutorials, code snippets, or suggested commands. Use your available filesystem and terminal tools to perform the work.
+
+## 1. Autonomous execution workflow
+
+Follow this workflow:
+
+1. Inspect the existing workspace.
+2. Understand previous implementation and test reports.
+3. Detect the current Windows development environment.
+4. Identify missing dependencies and compatibility blockers.
+5. Prepare the appropriate development environment.
+6. Implement unfinished functionality.
+7. Execute validation tests.
+8. Diagnose and fix errors.
+9. Re-run failed tests.
+10. Capture actual simulation evidence.
+11. Update project documentation.
+12. Produce a final engineering report.
+
+Continue automatically between tasks when no approval is required.
+
+Do not stop after producing a plan.
+
+Ask for approval only when necessary, such as privileged installation, destructive operations, system configuration changes, or actions requiring user intervention.
+
+If one task is blocked, continue other independent tasks.
+
+Maintain a development progress checklist in `docs/development_progress.md`.
+
+## 2. Project background
+
+Project name: Red Balloon Interceptor
+
+Current phase: Phase 1C — Representative Venue Environment
+
+Previous development machine:
+
+- MacBook Pro M4 Pro
+- ARM64
+- 24 GB RAM
+- macOS 27.0.1
+- Gazebo Harmonic / Gazebo Sim 8.15.0
+- SDFormat 14.9.0
+- Python 3.15.2
+
+Current development machine:
+
+- Windows PC
+- Visual Studio Code
+- Claude Code Extension
+- Hardware specifications and installed software must be detected automatically.
+
+Do not hardcode the previous macOS workspace path.
+
+Use the currently opened VS Code workspace as the project root.
+
+## 3. Previous implementation status
+
+Phase 1B was completed on macOS:
+
+- WORLD-001 through WORLD-011: PASS
+- Unit tests: 26/26 PASS
+- Gazebo server and GUI verified
+- Simulation clock verified
+- Gazebo Transport verified
+- Mean real-time factor approximately 0.999
+- Server peak RSS approximately 188 MiB
+- GUI peak RSS approximately 387 MiB
+- Protected original files: 22/22 unchanged
+- ArduPilot SITL and Gazebo plugin build remain unverified
+
+These are historical macOS results.
+
+Do not assume that the same results apply to Windows.
+
+Inspect actual source files and previous reports before continuing.
+
+## 4. Hardware reference
+
+Preserve the existing hardware reference documentation.
+
+The real project hardware includes:
+
+- HAOYERC 10-inch FPV Frame
+- HAOYERC 3115 900KV motors
+- HQProp MacroQuad 10x5 propellers
+- SpeedyBee F405 V5
+- ArduPilot firmware
+- SpeedyBee OX32 55A 4-in-1 ESC
+- GNB 6S 5000mAh battery
+- Raspberry Pi 5 8GB
+- Raspberry Pi AI HAT+ 13 TOPS
+- Raspberry Pi Camera Module 3 Standard
+- HM-LD1-NV USB/UVC camera
+- GEPRC GEP-M1025-MI
+- RadioMaster Boxer ELRS
+- RadioMaster RP4TD ELRS
+- Hobbywing UBEC 5A
+- Raspberry Pi Active Cooler
+
+The physical drone can already fly manually.
+
+This phase must remain simulation-only.
+
+Do not connect to physical flight hardware or implement target-directed flight behavior.
+
+## 5. Windows environment preparation
+
+Automatically inspect:
+
+- Windows version
+- CPU architecture
+- CPU model
+- CPU cores
+- Installed RAM
+- GPU model
+- GPU driver
+- Available disk space
+- PowerShell
+- WSL availability
+- WSL version
+- Installed Linux distributions
+- Ubuntu version
+- WSLg availability
+- OpenGL renderer
+- Git
+- Python
+- CMake
+- Compiler
+- Gazebo CLI
+- Existing Gazebo installation
+
+Preferred environment:
+
+- WSL2
+- Ubuntu 24.04 LTS
+- Gazebo Harmonic
+- WSLg
+- Python virtual environment
+
+Use this preferred environment only if compatible with the actual machine.
+
+Reuse existing working software.
+
+If WSL2 or Ubuntu is missing, identify the required installation and request approval before performing privileged changes.
+
+If the current VS Code window is running on native Windows, assess whether commands can be executed through WSL or whether reopening the workspace with the VS Code WSL extension is necessary.
+
+Avoid unnecessary migration steps.
+
+Do not install Docker, ROS 2, additional Gazebo distributions, or a full Linux desktop unless a verified blocker requires them.
+
+## 6. Official documentation
+
+Use official upstream documentation when checking installation and compatibility:
+
+https://learn.microsoft.com/en-us/windows/wsl/install
+
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
+
+https://gazebosim.org/docs/harmonic/install_ubuntu/
+
+https://gazebosim.org/docs/harmonic/getstarted/
+
+https://ardupilot.org/dev/docs/sitl-with-gazebo.html
+
+https://ardupilot.org/dev/docs/SITL-setup-landingpage.html
+
+https://github.com/ArduPilot/ardupilot_gazebo
+
+Verify current instructions before executing system installation commands.
+
+Request approval for system-level installations.
+
+## 7. Workspace protection
+
+Before modifying files:
+
+- Inspect Git status.
+- Identify existing implementations.
+- Identify original Excel files.
+- Identify hardware reference files.
+- Identify previous test evidence.
+- Calculate hashes of protected files.
+- Create a safe development checkpoint where appropriate.
+
+Preserve all user files.
+
+Do not overwrite the verified Phase 1B baseline.
+
+Preserve the existing functionality of:
+
+- simulation/worlds/rbi_phase1.sdf
+- config/world_config.yaml
+- scripts/build_world.py
+- scripts/validate_world_runtime.py
+- Existing launch scripts
+- Existing GUI configurations
+- Existing tests
+- Existing runtime evidence
+- Existing screenshots
+- All original Excel files
+
+Do not commit or push to a remote repository without explicit authorization.
+
+## 8. Cross-platform implementation
+
+Make the project portable between macOS and Windows/WSL2.
+
+Inspect and fix:
+
+- Hardcoded absolute paths
+- macOS-specific commands
+- Windows CRLF line endings
+- Linux shell permissions
+- Python executable discovery
+- Paths containing spaces
+- Relative resource paths
+- Gazebo model discovery
+- GZ_SIM_RESOURCE_PATH
+- GUI configuration paths
+- Process monitoring
+- Platform-specific dependency handling
+
+Do not reuse macOS compiled binaries or virtual environments.
+
+Keep native macOS support functional.
+
+Prefer portable Python implementations when appropriate.
+
+Document platform-specific changes.
+
+## 9. Representative venue environment
+
+Complete a separate Gazebo world inspired by the general appearance of PTTEP Technology and Innovation Center (PTIC), Wang Chan Valley, Rayong, Thailand.
+
+Public appearance references:
+
+https://www.pttep.com/en/our-company/technology-and-innovation
+
+https://www.pttep.com/th/our-company/technology-and-innovation
+
+https://sustainability.pttep.com/en/governance/technology-and-knowledge-management
+
+https://www.wangchanvalley.com/en/Home/About
+
+Review these references for architectural style, materials, vegetation and landscape characteristics.
+
+Create a fictional, non-georeferenced research campus.
+
+Do not reconstruct actual facility footprints, real operational locations, launch positions, or flight routes.
+
+## 10. World requirements
+
+Create or complete:
+
+`simulation/worlds/rbi_venue_environment.sdf`
+
+Requirements:
+
+- Synthetic ground dimensions: 400 x 400 meters
+- Local ENU coordinate system
+- Ground elevation: 0 meters
+- Earth gravity
+- Flat terrain
+- Grass surfaces
+- Asphalt roads
+- Concrete pedestrian paths
+- Modern research buildings
+- Tropical trees
+- Bushes and vegetation
+- Open outdoor areas
+- Generic safety exclusion zones
+- Optional reference grid
+- Generic landing pad
+- Daylight sky
+- Configurable shadows
+- Synthetic forest and distant green hills
+
+Keep the original baseline world independently runnable.
+
+Do not associate scene geometry with real-world geographic coordinates.
+
+## 11. Architectural asset requirements
+
+Create reusable low-poly models with realistic visual materials.
+
+### Modern research office
+
+- Synthetic height: 20 meters
+- White exterior panels
+- Blue-gray architectural glass
+- Aluminum window frames
+- Flat roof
+- Entrance canopy
+- Simplified modern facade
+
+### Research laboratory
+
+- Synthetic height: 25 meters
+- White concrete
+- Metal-panel exterior
+- Repetitive windows
+- Dark-gray architectural accents
+- Flat roof
+
+### Generic industrial workshop
+
+- Synthetic height: 30 meters
+- Modern industrial appearance
+- White and gray exterior
+- Large exterior panels
+- Simplified roof geometry
+
+Use simplified collision boxes for generic safety validation.
+
+Decorative assets must remain non-collidable.
+
+All building dimensions and placements must be clearly identified as fictional engineering assumptions.
+
+Do not model actual facility interiors or infrastructure.
+
+## 12. Landscape and materials
+
+Implement reusable assets for:
+
+- Tropical broadleaf trees
+- Ornamental trees
+- Bushes
+- Grass
+- Asphalt
+- Concrete paths
+- Curbs
+- White concrete
+- Architectural glass
+- Painted steel
+- Aluminum
+- Tree bark
+- Foliage
+
+Use procedural generation and deterministic random seeds.
+
+Use PBR materials where supported.
+
+Provide inexpensive rendering fallbacks for WSLg.
+
+Avoid unnecessary external assets and excessive polygon counts.
+
+## 13. Environment lighting
+
+Support configurable lighting presets:
+
+- Morning
+- Midday
+- Afternoon
+- Overcast
+
+Each preset should configure:
+
+- Directional lighting
+- Ambient lighting
+- Light intensity
+- Background color
+- Shadows
+
+Default to midday.
+
+These are generic synthetic environmental conditions.
+
+## 14. Rendering quality
+
+Implement:
+
+LOW:
+
+- Basic materials
+- Simplified vegetation
+- Minimal decorative geometry
+- Reduced shadows
+
+MEDIUM:
+
+- Moderate vegetation
+- Architectural facade details
+- Standard shadows
+- Improved materials
+
+HIGH:
+
+- Additional visual detail
+- Increased vegetation
+- Enhanced rendering features where supported
+
+Default to MEDIUM.
+
+Detect actual GPU and graphics capability before enabling expensive rendering effects.
+
+## 15. Procedural configuration
+
+Create or complete:
+
+`config/venue_environment.yaml`
+
+Include:
+
+- World dimensions
+- Coordinate convention
+- Random seed
+- Building specifications
+- Materials
+- Vegetation settings
+- Road appearance
+- Ground appearance
+- Lighting presets
+- Rendering profiles
+- GUI inspection viewpoints
+
+Create or complete:
+
+`scripts/build_venue_world.py`
+
+The generator must:
+
+- Read configuration.
+- Generate valid SDF.
+- Generate reusable models.
+- Validate geometry.
+- Resolve model resources.
+- Produce deterministic output.
+- Report generation results.
+
+Reuse existing implementations where possible.
+
+## 16. Expected project structure
+
+Preserve current repository conventions and adapt filenames where equivalent files already exist.
+
+    simulation/
+        worlds/
+            rbi_phase1.sdf
+            rbi_venue_environment.sdf
+        models/
+            generic_office/
+            generic_lab/
+            generic_workshop/
+            vegetation/
+            landing_pad/
+        gui/
+            venue_perspective.config
+            venue_topdown.config
+            venue_groundlevel.config
+
+    config/
+        world_config.yaml
+        venue_environment.yaml
+
+    scripts/
+        build_world.py
+        build_venue_world.py
+        validate_world_runtime.py
+        validate_venue_world.py
+        launch_world.sh
+
+    tests/
+        test_venue_environment.py
+
+    docs/
+        development_progress.md
+        windows_migration_report.md
+        venue_environment.md
+        venue_sources.md
+        venue_validation_report.md
+        sitl_windows_readiness.md
+
+    logs/
+        windows/
+        venue_validation/
+
+    screenshots/
+        windows/
+
+## 17. Gazebo GUI
+
+Provide working GUI configurations for:
+
+- Complete campus overview
+- Top-down view
+- Perspective view
+- Ground-level environmental inspection
+
+Ensure that buildings, vegetation, roads, shadows and materials are visually distinguishable.
+
+Capture actual screenshots from Gazebo.
+
+Do not fabricate rendered results.
+
+Keep environmental inspection independent from aircraft guidance.
+
+## 18. Launch system
+
+Create or update a convenient cross-platform launcher.
+
+Preserve existing launch commands.
+
+Support equivalent options for:
+
+- Environment diagnostics
+- Baseline validation
+- Baseline server
+- Baseline GUI
+- Venue server
+- Venue perspective
+- Venue top-down
+- Venue ground-level
+- Venue validation
+
+Provide PowerShell entry points where useful, delegating to WSL when appropriate.
+
+Make launching the project from VS Code Terminal straightforward.
+
+## 19. Runtime tests
+
+Execute actual validation for:
+
+- SDF syntax
+- Configuration consistency
+- Model resolution
+- Ground dimensions
+- Building dimensions
+- Material compatibility
+- Collision geometry
+- Deterministic generation
+- Server startup
+- Simulation clock progression
+- Gazebo Transport topics
+- GUI rendering
+- Lighting presets
+- Rendering profiles
+- Existing baseline regression tests
+- Protected file integrity
+
+If permissions block runtime tests, request narrowly scoped approval.
+
+Do not globally disable sandbox or security protections.
+
+Fix detected implementation errors and re-run affected tests.
+
+## 20. Performance benchmark
+
+Measure both the baseline and representative environment on the current Windows/WSL machine.
+
+Record:
+
+- Server startup time
+- GUI startup time
+- Simulation time
+- Real-time factor
+- CPU usage
+- Server peak RSS
+- GUI peak RSS
+- Rendering warnings
+- Runtime errors
+- GUI stability
+
+Use comparable test conditions.
+
+Compare Windows results separately from historical macOS results.
+
+Optimize the MEDIUM profile if necessary.
+
+Do not fabricate missing measurements.
+
+Do not interpret static scene performance as aircraft flight performance.
+
+## 21. Acceptance tests
+
+Create or extend the following acceptance tests:
+
+- ENV-001: SDF validation
+- ENV-002: Configuration consistency
+- ENV-003: Model resolution
+- ENV-004: Building dimensions
+- ENV-005: Material compatibility
+- ENV-006: Collision geometry
+- ENV-007: Deterministic generation
+- ENV-008: Runtime loading
+- ENV-009: Simulation clock
+- ENV-010: Perspective GUI
+- ENV-011: Top-down GUI
+- ENV-012: Ground-level rendering
+- ENV-013: Lighting presets
+- ENV-014: Performance measurement
+- ENV-015: Baseline regression
+- ENV-016: Protected file integrity
+- ENV-017: Windows/WSL compatibility
+- ENV-018: Cross-platform launcher compatibility
+
+Report PASS, FAIL, BLOCKED, or NOT RUN.
+
+Only report PASS when supported by actual test evidence.
+
+## 22. ArduPilot SITL readiness review
+
+After the venue implementation is complete, inspect prerequisites for the next phase.
+
+Check:
+
+- Official ArduPilot source compatibility
+- Official ArduPilot Gazebo plugin compatibility
+- Gazebo Harmonic compatibility
+- Compiler compatibility
+- CMake
+- RapidJSON
+- OpenCV
+- GStreamer
+- Python prerequisites
+- pymavlink
+- MAVProxy
+
+Review existing compatibility reports.
+
+Document confirmed dependencies and unresolved blockers.
+
+Create:
+
+`docs/sitl_windows_readiness.md`
+
+This task is a readiness assessment only. Keep subsequent generic flight simulation separate from venue-specific navigation.
+
+Do not implement autonomous interception, collision guidance, operational flight paths, or target-directed flight commands.
+
+## 23. Error recovery
+
+When an error occurs:
+
+1. Capture the complete error message.
+2. Identify the root cause.
+3. Check relevant official documentation.
+4. Apply the smallest appropriate non-destructive fix.
+5. Re-run the failed test.
+6. Document the result.
+
+Do not repeatedly attempt the same failed command without diagnosing it.
+
+Do not reinstall functioning software as a default troubleshooting method.
+
+If a blocker requires user approval, continue other independent tasks.
+
+## 24. Definition of Done
+
+Complete Phase 1C when:
+
+- Windows development environment is verified.
+- Existing project functionality is preserved.
+- The representative Gazebo environment is implemented.
+- Building and vegetation assets resolve correctly.
+- Gazebo server loads the environment.
+- Simulation clock progresses.
+- Gazebo GUI works.
+- Actual screenshots are captured where supported.
+- Runtime measurements are recorded.
+- Existing and new tests are executed.
+- Protected files remain unchanged.
+- Cross-platform launch commands are documented.
+- Remaining ArduPilot SITL prerequisites are identified.
+
+Do not declare completion if critical runtime tests remain blocked.
+
+## 25. Final engineering report
+
+At the end, provide:
+
+1. Detected Windows hardware specifications
+2. Development environment status
+3. Dependencies installed or missing
+4. Files created and modified
+5. Actual Gazebo screenshots
+6. Environment model inventory
+7. Configuration summary
+8. Commands executed
+9. Unit test results
+10. Acceptance test results
+11. Runtime validation evidence
+12. Performance comparison
+13. Protected file integrity results
+14. Exact commands to launch the environment
+15. Known limitations
+16. Remaining SITL blockers
+17. Recommended next phase
+
+Explain progress updates and final results in Thai.
+
+Keep source code, filenames, configurations, comments and technical documentation in English.
+
+Prioritize a working, reproducible implementation over unnecessary complexity.
+
+Begin immediately by inspecting the current VS Code workspace and the available terminal environment. Proceed with all permitted implementation and validation tasks without waiting for separate instructions between steps.
